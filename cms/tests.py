@@ -6,7 +6,11 @@ from .models import NavigationLink, Page, SiteSetting
 
 class PublicPageTests(TestCase):
     def setUp(self):
-        SiteSetting.objects.create(site_name='Saber Tech Logistics')
+        SiteSetting.objects.create(
+            site_name='Saber Tech Logistics',
+            site_url='https://sabertechlogistics.com',
+            default_seo_description='Default logistics description.',
+        )
         self.home = Page.objects.create(
             title='Home',
             slug='',
@@ -31,6 +35,21 @@ class PublicPageTests(TestCase):
         response = self.client.get('/about/')
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, 'About Saber Tech')
+
+    def test_page_seo_metadata_renders(self):
+        self.about.seo_title = 'About SEO Title'
+        self.about.seo_description = 'About SEO description.'
+        self.about.seo_keywords = 'logistics, courier'
+        self.about.seo_noindex = True
+        self.about.save()
+        response = self.client.get('/about/')
+        self.assertContains(response, '<title>About SEO Title</title>', html=True)
+        self.assertContains(response, 'name="description" content="About SEO description."')
+        self.assertContains(response, 'name="keywords" content="logistics, courier"')
+        self.assertContains(response, 'name="robots" content="noindex, follow"')
+        self.assertContains(response, 'rel="canonical" href="https://sabertechlogistics.com/about/"')
+        self.assertContains(response, 'property="og:title" content="About SEO Title"')
+        self.assertContains(response, 'name="twitter:card" content="summary_large_image"')
 
     def test_unpublished_page_returns_404(self):
         Page.objects.create(title='Hidden', slug='hidden', is_published=False)

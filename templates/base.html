@@ -2,15 +2,36 @@
 <!doctype html>
 <html lang="en">
 <head>
+    {% firstof page.seo_title site_settings.default_seo_title page.title site_settings.site_name "Saber Tech Logistics" as meta_title %}
+    {% firstof page.seo_description site_settings.default_seo_description page.subtitle as meta_description %}
+    {% firstof page.seo_keywords site_settings.default_seo_keywords as meta_keywords %}
+    {% firstof page.og_title page.seo_title site_settings.default_seo_title page.title site_settings.site_name "Saber Tech Logistics" as og_title %}
+    {% firstof page.og_description page.seo_description site_settings.default_seo_description page.subtitle as og_description %}
+    {% firstof page.twitter_title page.og_title page.seo_title site_settings.default_seo_title page.title site_settings.site_name "Saber Tech Logistics" as twitter_title %}
+    {% firstof page.twitter_description page.og_description page.seo_description site_settings.default_seo_description page.subtitle as twitter_description %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{% if page.seo_title %}{{ page.seo_title }}{% elif page.title %}{{ page.title }} - {% endif %}{{ site_settings.site_name|default:"Saber Tech Logistics" }}</title>
-    {% if page.seo_description %}<meta name="description" content="{{ page.seo_description }}">{% endif %}
+    <title>{{ meta_title }}</title>
+    {% if meta_description %}<meta name="description" content="{{ meta_description }}">{% endif %}
+    {% if meta_keywords %}<meta name="keywords" content="{{ meta_keywords }}">{% endif %}
+    <meta name="robots" content="{% if page.seo_noindex %}noindex{% else %}index{% endif %}, {% if page.seo_nofollow %}nofollow{% else %}follow{% endif %}">
+    <link rel="canonical" href="{{ canonical_url }}">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="{{ site_settings.site_name|default:'Saber Tech Logistics' }}">
+    <meta property="og:title" content="{{ og_title }}">
+    {% if og_description %}<meta property="og:description" content="{{ og_description }}">{% endif %}
+    <meta property="og:url" content="{{ canonical_url }}">
+    {% if og_image_url %}<meta property="og:image" content="{{ og_image_url }}">{% endif %}
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ twitter_title }}">
+    {% if twitter_description %}<meta name="twitter:description" content="{{ twitter_description }}">{% endif %}
+    {% if twitter_image_url %}<meta name="twitter:image" content="{{ twitter_image_url }}">{% endif %}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inder&family=Jost:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&family=Roboto+Slab:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/site.css' %}">
     {% if site_settings.favicon %}<link rel="icon" href="{{ site_settings.favicon.url }}">{% else %}<link rel="icon" href="{% static 'images/cropped-SaberTech-Logistics-logo-design-final-file-01-scaled-2-32x32.png' %}">{% endif %}
+    {% if page.structured_data_json %}<script type="application/ld+json">{{ page.structured_data_json|safe }}</script>{% endif %}
     {{ site_settings.analytics_head_code|safe }}
 </head>
 <body class="template-{{ page.template|default:'standard' }}">

@@ -39,7 +39,7 @@ class PageAdmin(admin.ModelAdmin):
     )
     list_editable = ('is_published', 'show_in_main_nav', 'show_in_footer', 'sort_order')
     list_filter = ('template', 'is_published', 'show_in_main_nav', 'show_in_footer')
-    search_fields = ('title', 'slug', 'subtitle', 'body')
+    search_fields = ('title', 'slug', 'subtitle', 'body', 'seo_title', 'seo_description')
     inlines = [ContentBlockInline]
     fieldsets = (
         ('Page', {
@@ -55,7 +55,33 @@ class PageAdmin(admin.ModelAdmin):
             )
         }),
         ('Content', {'fields': ('eyebrow', 'subtitle', 'body')}),
-        ('SEO', {'fields': ('seo_title', 'seo_description')}),
+        ('SEO basics', {
+            'description': 'Control how this page appears in search engines.',
+            'fields': (
+                'seo_title',
+                'seo_description',
+                'seo_keywords',
+                'canonical_url',
+                'seo_noindex',
+                'seo_nofollow',
+            ),
+        }),
+        ('Social sharing', {
+            'classes': ('collapse',),
+            'description': 'Optional overrides for Facebook, LinkedIn, X/Twitter, and other previews.',
+            'fields': (
+                'og_title',
+                'og_description',
+                'og_image',
+                'twitter_title',
+                'twitter_description',
+                'twitter_image',
+            ),
+        }),
+        ('Structured data', {
+            'classes': ('collapse',),
+            'fields': ('structured_data_json',),
+        }),
     )
 
 
@@ -65,6 +91,16 @@ class SiteSettingAdmin(admin.ModelAdmin):
     fieldsets = (
         ('Brand', {'fields': ('site_name', 'tagline', 'footer_text', 'logo', 'favicon')}),
         ('Contact and Social', {'fields': ('phone', 'email', 'facebook_url', 'instagram_url')}),
+        ('SEO defaults', {
+            'description': 'Fallback metadata used when individual pages leave SEO fields blank.',
+            'fields': (
+                'site_url',
+                'default_seo_title',
+                'default_seo_description',
+                'default_seo_keywords',
+                'default_og_image',
+            ),
+        }),
         ('Third-party scripts and tracking', {
             'description': (
                 'Paste Google tags, live chat widgets, pixels, verification tags, '
