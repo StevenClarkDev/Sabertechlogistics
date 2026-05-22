@@ -1167,7 +1167,7 @@ h3 {
 }
 
 .process-section {
-    padding: 28px 14px 58px;
+    padding: 28px clamp(24px, 5vw, 88px) 58px;
     color: #fff;
     background: #061c39;
 }
@@ -1265,13 +1265,13 @@ h3 {
 }
 
 .story-band {
-    padding: 116px 14px 82px;
+    padding: 116px clamp(28px, 6vw, 104px) 82px;
     color: #fff;
     background: #061c39;
 }
 
 .story-band h2 {
-    max-width: 980px;
+    max-width: 1260px;
     margin-bottom: 38px;
     color: #2fa4ff;
     font-family: "Jost", Arial, sans-serif;
@@ -1280,13 +1280,13 @@ h3 {
 }
 
 .story-band p {
-    max-width: none;
+    max-width: 1320px;
     margin-bottom: 24px;
     font-weight: 700;
 }
 
 .services-band {
-    padding: 72px 0 94px;
+    padding: 72px clamp(24px, 5vw, 88px) 94px;
     background: #061c39;
     color: #fff;
 }
@@ -1359,7 +1359,7 @@ h3 {
 }
 
 .leadership-section {
-    padding: 88px 18px 100px;
+    padding: 88px clamp(24px, 5vw, 88px) 100px;
     background: #061c39;
     color: #fff;
     text-align: center;
@@ -1446,9 +1446,7 @@ h3 {
 
 @media (min-width: 1280px) {
     .template-home .site-header,
-    .wp-hero,
-    .process-section,
-    .story-band {
+    .wp-hero {
         padding-left: 14px;
         padding-right: 14px;
     }
