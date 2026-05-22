@@ -1,947 +1,947 @@
 [
-{
-  "model": "cms.sitesetting",
-  "pk": 1,
-  "fields": {
-    "created_at": "2026-05-22T16:49:12.707Z",
-    "updated_at": "2026-05-22T16:49:12.707Z",
-    "site_name": "Saber Tech Logistics",
-    "tagline": "Trusted Solutions, Every Mile",
-    "footer_text": "Saber Tech © 2026 • Built on ATMP-core • Owner and operator centric logistics platform.",
-    "phone": "",
-    "email": "",
-    "facebook_url": "https://www.facebook.com/sabertechlogistics",
-    "instagram_url": "https://www.instagram.com/sabertechlogistics",
-    "logo": "site/logo.png",
-    "favicon": "site/favicon.png",
-    "analytics_head_code": "",
-    "analytics_body_code": "",
-    "third_party_footer_code": ""
+  {
+    "model": "cms.sitesetting",
+    "pk": 1,
+    "fields": {
+      "created_at": "2026-05-22T16:49:12.707Z",
+      "updated_at": "2026-05-22T16:49:12.707Z",
+      "site_name": "Saber Tech Logistics",
+      "tagline": "Trusted Solutions, Every Mile",
+      "footer_text": "Saber Tech \u00a9 2026 \u2022 Built on ATMP-core \u2022 Owner and operator centric logistics platform.",
+      "phone": "",
+      "email": "",
+      "facebook_url": "https://www.facebook.com/sabertechlogistics",
+      "instagram_url": "https://www.instagram.com/sabertechlogistics",
+      "logo": "site/logo.png",
+      "favicon": "site/favicon.png",
+      "analytics_head_code": "",
+      "analytics_body_code": "",
+      "third_party_footer_code": ""
+    }
+  },
+  {
+    "model": "cms.page",
+    "pk": 1,
+    "fields": {
+      "created_at": "2026-05-22T16:49:12.711Z",
+      "updated_at": "2026-05-22T16:49:12.711Z",
+      "title": "Every Delivery Executed with Absolute Reliability",
+      "slug": "",
+      "nav_label": "Home",
+      "subtitle": "Every order is managed with precision, transparency, and professionalism, giving you confidence and control over your delivery operations.",
+      "eyebrow": "Secure. Transparent. Always.",
+      "body": "<p>Saber Tech empowers businesses with disciplined execution, seamless delivery, and operational precision. At Saber Tech, we redefine last-mile delivery by combining smart technology with disciplined, operator-led execution.</p>",
+      "template": "home",
+      "seo_title": "",
+      "seo_description": "",
+      "is_published": true,
+      "show_in_main_nav": true,
+      "show_in_footer": false,
+      "sort_order": 0
+    }
+  },
+  {
+    "model": "cms.page",
+    "pk": 2,
+    "fields": {
+      "created_at": "2026-05-22T16:49:12.716Z",
+      "updated_at": "2026-05-22T17:37:39.728Z",
+      "title": "ATMP Courier",
+      "slug": "atmp-courier",
+      "nav_label": "",
+      "subtitle": "",
+      "eyebrow": "",
+      "body": "<h2>DRIVER GUIDE</h2><h2>Welcome to Your Seamless Delivery Experience</h2><p>Step into a platform designed to make every route predictable, fair, and efficient. ATMP-Courier puts you in control, matching deliveries to the right vehicle, paying jobs upfront, and eliminating wasted time so you can focus on the road.</p><p>Our system listens to you. Every insight from real deliveries shapes smarter dispatching, optimized routes, and smoother workflows. When challenges arise, the platform adapts, keeping operations fast, transparent, and consistent.</p><p>This isn't just technology; it's a partner built for professionals who value clarity, precision, and the power to influence how every delivery gets done.</p>",
+      "template": "standard",
+      "seo_title": "",
+      "seo_description": "",
+      "is_published": true,
+      "show_in_main_nav": true,
+      "show_in_footer": true,
+      "sort_order": 10
+    }
+  },
+  {
+    "model": "cms.page",
+    "pk": 3,
+    "fields": {
+      "created_at": "2026-05-22T16:49:12.720Z",
+      "updated_at": "2026-05-22T16:49:12.720Z",
+      "title": "ATMP-CORE",
+      "slug": "atmp-core",
+      "nav_label": "ATMP-Core",
+      "subtitle": "",
+      "eyebrow": "",
+      "body": "<h2>ATMP-Core: Discipline Before Dispatch</h2><p>ATMP-core acts as a control gate for every delivery. Jobs only go live when drivers are available, vehicles are suitable, and terms are confirmed. By enforcing readiness before movement, the system prevents breakdowns, delays, and wasted effort, creating delivery operations built on discipline, not chance.</p><h2>Control Before Motion</h2><p>Every delivery decision should be made before the wheels move.</p><h2>Design Goal</h2><p>Protect revenue by enforcing rules before execution.</p><p>ATMP-core is where order replaces chaos. It sets execution rules in advance, confirming readiness, aligning capacity, and locking in accountability before a job is released. Nothing is assumed. Nothing is improvised.</p><p>By making design decisions upstream, ATMP-core eliminates costly downstream corrections. Loads fit. Routes make sense. Operators stay in control.</p><p>Built as a flexible command layer, ATMP-core evolves as operations expand, without added friction, rebuilds, or hidden complexity. It's not software that reacts. It's the infrastructure that prevents.</p><h2>Systems That Enforce Discipline</h2><h3>Expansion by Design</h3><p>Built to grow cleanly across markets and workflows.</p><h3>Funds First</h3><p>Delivery only begins once payment is secured.</p><h3>Always Verified</h3><p>Dispatch runs on real-time readiness, not assumptions.</p><h3>Right Fit, Every Time</h3><p>Jobs align with vehicle capacity from the start.</p>",
+      "template": "standard",
+      "seo_title": "",
+      "seo_description": "",
+      "is_published": true,
+      "show_in_main_nav": true,
+      "show_in_footer": true,
+      "sort_order": 20
+    }
+  },
+  {
+    "model": "cms.page",
+    "pk": 4,
+    "fields": {
+      "created_at": "2026-05-22T16:49:12.724Z",
+      "updated_at": "2026-05-22T16:49:12.724Z",
+      "title": "CUSTOMER",
+      "slug": "customer-order",
+      "nav_label": "Customer Order",
+      "subtitle": "",
+      "eyebrow": "",
+      "body": "<h2>Customer Order Portal</h2><p>Use the ATMP-Courier Customer Portal to schedule deliveries effortlessly. With enforced driver availability and secure payment validation, your orders are guaranteed to be handled reliably and on time.</p><p><a class=\"pill-button\" href=\"https://sabertech-php-api.24aupl12h4kp.us-south.codeengine.appdomain.cloud/customer-pwa/\" target=\"_blank\" rel=\"noopener\">Launch Customer Order Portal</a></p><p>The Customer Portal has Smart scheduling, secure payments, and happy margins. The Customer Portal ensures every delivery is possible before it even hits the system.</p><h2>Live Access</h2><p>This link opens in a new tab.</p><h2>Why ATMP Uses Progressive Web Apps</h2><p>ATMP leverages Progressive Web Apps (PWAs) to ensure consistent business logic across all devices. Updates deploy instantly, no app store delays, so owners and operators maintain full control over live operations.</p><p>PWAs deliver real-time push notifications, offline resilience, and secure access while reducing maintenance overhead. This approach minimizes downtime and operational friction, supporting efficiency and profitability for every delivery.</p>",
+      "template": "standard",
+      "seo_title": "",
+      "seo_description": "",
+      "is_published": true,
+      "show_in_main_nav": true,
+      "show_in_footer": true,
+      "sort_order": 30
+    }
+  },
+  {
+    "model": "cms.page",
+    "pk": 5,
+    "fields": {
+      "created_at": "2026-05-22T16:49:12.728Z",
+      "updated_at": "2026-05-22T16:49:12.728Z",
+      "title": "DRIVER",
+      "slug": "driver-access",
+      "nav_label": "Driver Access",
+      "subtitle": "",
+      "eyebrow": "",
+      "body": "<h2>Driver Access Portal</h2><p>Join or access the ATMP-Courier driver platform, built to make every dispatch smooth, fast, and hassle-free.</p><p><a class=\"pill-button\" href=\"https://sabertech-php-api.24aupl12h4kp.us-south.codeengine.appdomain.cloud/driver-signup/\" target=\"_blank\" rel=\"noopener\">Driver Sign Up</a> <a class=\"pill-button pill-filled\" href=\"https://sabertech-php-api.24aupl12h4kp.us-south.codeengine.appdomain.cloud/driver-pwa/\" target=\"_blank\" rel=\"noopener\">Driver Sign In</a></p><p>Drivers connect with ATMP-Courier through our Progressive Web App, built for real-time dispatch. Smart notifications and enforced acceptance windows keep operations predictable, reduce downtime, and get you on the road faster.</p><h2>Notes</h2><p>Links open in a new tab.</p><h2>Why ATMP Uses Progressive Web Apps</h2><p>ATMP leverages Progressive Web Apps (PWAs) to ensure consistent business logic across all devices. Updates deploy instantly, no app store delays, so owners and operators maintain full control over live operations.</p><p>PWAs deliver real-time push notifications, offline resilience, and secure access while reducing maintenance overhead. This approach minimizes downtime and operational friction, supporting efficiency and profitability for every delivery.</p>",
+      "template": "standard",
+      "seo_title": "",
+      "seo_description": "",
+      "is_published": true,
+      "show_in_main_nav": true,
+      "show_in_footer": true,
+      "sort_order": 40
+    }
+  },
+  {
+    "model": "cms.page",
+    "pk": 6,
+    "fields": {
+      "created_at": "2026-05-22T16:49:12.733Z",
+      "updated_at": "2026-05-22T16:49:12.733Z",
+      "title": "Executive Leadership",
+      "slug": "leadership",
+      "nav_label": "Leadership",
+      "subtitle": "Saber Tech Executive Team",
+      "eyebrow": "",
+      "body": "",
+      "template": "leadership",
+      "seo_title": "",
+      "seo_description": "",
+      "is_published": true,
+      "show_in_main_nav": true,
+      "show_in_footer": true,
+      "sort_order": 50
+    }
+  },
+  {
+    "model": "cms.page",
+    "pk": 7,
+    "fields": {
+      "created_at": "2026-05-22T16:49:12.737Z",
+      "updated_at": "2026-05-22T16:49:12.737Z",
+      "title": "Saber Tech Launches Cutting-Edge Platform to Transform Last-Mile Delivery",
+      "slug": "press",
+      "nav_label": "Press",
+      "subtitle": "",
+      "eyebrow": "",
+      "body": "<p>Saber Tech today announced the beta launch of its Last-Mile Courier Platform, a production-ready system the company operates to power real-world delivery execution and visibility. This milestone marks Saber Tech's first fully deployable platform, now running live across the United States and Canada.</p><p>The beta focuses exclusively on last-mile courier operations, delivering reliable dispatch coordination, real-time tracking, exception handling, and operational visibility across local and regional networks. It is purpose-built to ensure on-time, transparent, and professional delivery execution, without attempting to serve as a full supply chain or transportation management system.</p><p>By directly operating the platform, Saber Tech maintains complete control over performance, reliability, and day-to-day operations, allowing the team to refine and optimize the system in real-world conditions.</p><p>While the company envisions a broader logistics ecosystem, this beta prioritizes stability and consistent last-mile performance, laying the foundation for scalable, dependable delivery solutions.</p><p>With this beta launch, Saber Tech solidifies its reputation as an operator-first technology company, deploying systems only when they are proven ready for real-world operations. Each release is deliberately scoped to ensure fully deployable, production-ready performance, with additional platform functionality introduced only when it meets the same rigorous operational standards.</p><h2>Media Contact</h2><p>Val Olson<br>Chief Public Relations Officer<br>Saber Tech<br>Email: volson@sabertechlogistics.com</p>",
+      "template": "standard",
+      "seo_title": "",
+      "seo_description": "",
+      "is_published": true,
+      "show_in_main_nav": true,
+      "show_in_footer": true,
+      "sort_order": 60
+    }
+  },
+  {
+    "model": "cms.page",
+    "pk": 8,
+    "fields": {
+      "created_at": "2026-05-22T16:49:12.741Z",
+      "updated_at": "2026-05-22T16:49:12.741Z",
+      "title": "CONTACT",
+      "slug": "contact-us",
+      "nav_label": "Contact Us",
+      "subtitle": "",
+      "eyebrow": "",
+      "body": "<h2>Get in Touch with Saber Tech</h2><p>Saber Tech is here to answer your questions, streamline your delivery needs, and provide reliable support whenever you need it.</p><h2>Message</h2><p>Name, email, and message are required. This form does not process submissions on the server.</p>",
+      "template": "contact",
+      "seo_title": "",
+      "seo_description": "",
+      "is_published": true,
+      "show_in_main_nav": true,
+      "show_in_footer": true,
+      "sort_order": 70
+    }
+  },
+  {
+    "model": "cms.page",
+    "pk": 9,
+    "fields": {
+      "created_at": "2026-05-22T16:49:12.745Z",
+      "updated_at": "2026-05-22T16:49:12.745Z",
+      "title": "ABOUT",
+      "slug": "about",
+      "nav_label": "About",
+      "subtitle": "",
+      "eyebrow": "",
+      "body": "<h2>About Saber Tech</h2><p>Saber Tech builds owner and operator centric logistics infrastructure for last-mile delivery execution.</p><p>Saber Tech is an infrastructure-first technology company focused on logistics execution systems designed for owners and operators. Our platforms enforce rules, automate workflows, and protect profit margins while supporting scalable growth.</p><h2>Focus</h2><p>Owner and operator controlled execution infrastructure.</p>",
+      "template": "standard",
+      "seo_title": "",
+      "seo_description": "",
+      "is_published": true,
+      "show_in_main_nav": false,
+      "show_in_footer": true,
+      "sort_order": 80
+    }
+  },
+  {
+    "model": "cms.page",
+    "pk": 10,
+    "fields": {
+      "created_at": "2026-05-22T16:49:12.750Z",
+      "updated_at": "2026-05-22T16:49:12.750Z",
+      "title": "Privacy Policy",
+      "slug": "privacy-policy",
+      "nav_label": "",
+      "subtitle": "",
+      "eyebrow": "",
+      "body": "<p>Effective Date: 1/29/26</p><p>Saber Tech (\u201cSaber Tech,\u201d \u201cwe,\u201d \u201cour,\u201d or \u201cus\u201d) operates the ATMP-Core and ATMP-Courier platforms, including all related websites, applications, and services (collectively, the \u201cPlatform\u201d). We are committed to protecting the privacy, confidentiality, and security of all users who interact with our Platform.</p><p>This Privacy Policy explains how we collect, use, store, share, and protect your personal information when you access or use our services as a customer, driver, business partner, or visitor.</p><h2>1. Information We Collect</h2><p>We collect information necessary to operate a secure, efficient, and enforcement-driven logistics platform.</p><h3>Personal Information</h3><p>When you register or use the Platform, we may collect personal information such as your name, email address, phone number, mailing address, login credentials, and profile details. For drivers, we may also collect government-issued identification, driver\u2019s license details, vehicle information, insurance documents, and verification records.</p><h3>Financial Information</h3><p>To process payments and protect revenue integrity, we may collect billing details, payment method information, transaction history, and payout records. Payment data is processed securely through authorized third-party payment providers.</p><h3>Operational &amp; Usage Information</h3><p>We automatically collect technical and operational data, including IP address, browser type, device information, timestamps, acceptance windows, availability status, dispatch activity, and delivery performance metrics.</p><h3>Location Information</h3><p>Location data may be collected in real time to enable dispatch coordination, route optimization, availability enforcement, and delivery confirmation.</p><h2>2. How We Use Your Information</h2><p>We use collected information to operate and improve the Platform, including but not limited to managing dispatch workflows, validating driver availability, enforcing acceptance windows, processing payments, preventing fraud, and maintaining system accountability.</p><p>Your information helps us ensure operational accuracy, system reliability, regulatory compliance, and secure execution of deliveries from order creation through completion.</p><h2>3. Data Sharing and Disclosure</h2><p>Saber Tech does not sell or rent personal data.</p><p>We may share information with trusted third parties such as payment processors, identity verification providers, cloud infrastructure partners, and analytics services solely for operational purposes. We may also disclose information when required by law, regulation, court order, or to protect the rights, safety, or security of the Platform and its users.</p><h2>4. Data Retention</h2><p>We retain personal and operational data only for as long as necessary to fulfill business, legal, and regulatory requirements. Upon account termination, data may be retained for compliance, dispute resolution, fraud prevention, or audit purposes and may later be anonymized for analytical use.</p><h2>5. Data Security</h2><p>We implement industry-standard technical and organizational safeguards, including encryption, access controls, authentication systems, and continuous monitoring. While we strive to protect all data, users acknowledge that no system can be guaranteed 100% secure.</p><h2>6. User Rights</h2><p>Users may request access, correction, or deletion of personal information, subject to applicable laws and operational requirements. Requests can be submitted through official support channels and will be reviewed in accordance with legal obligations.</p><h2>7. Policy Updates</h2><p>We may update this Privacy Policy periodically. Continued use of the Platform after changes are posted constitutes acceptance of the updated policy.</p>",
+      "template": "legal",
+      "seo_title": "",
+      "seo_description": "",
+      "is_published": true,
+      "show_in_main_nav": false,
+      "show_in_footer": true,
+      "sort_order": 90
+    }
+  },
+  {
+    "model": "cms.page",
+    "pk": 11,
+    "fields": {
+      "created_at": "2026-05-22T16:49:12.755Z",
+      "updated_at": "2026-05-22T16:49:12.755Z",
+      "title": "Term & Condition",
+      "slug": "term-and-conditions",
+      "nav_label": "",
+      "subtitle": "",
+      "eyebrow": "",
+      "body": "<p>Effective Date: 1/29/26</p><p>These Terms &amp; Conditions (\u201cTerms\u201d) govern your access to and use of the ATMP-Core and ATMP-Courier platforms operated by Saber Tech. By accessing or using the Platform, you agree to be legally bound by these Terms.</p><h2>1. Platform Purpose</h2><p>ATMP-Courier is an operational logistics and last-mile delivery platform designed to manage dispatch execution, driver availability enforcement, payment validation, and delivery accountability. The Platform is intended for lawful commercial use only.</p><h2>2. User Eligibility</h2><p>You must be at least 18 years old to use the Platform. Drivers must meet all licensing, vehicle, insurance, and verification requirements as defined by Saber Tech and applicable laws.</p><h2>3. Account Registration &amp; Responsibility</h2><p>Users are responsible for maintaining accurate account information and safeguarding login credentials. Any activity conducted through your account is your responsibility. Saber Tech is not liable for unauthorized access caused by user negligence.</p><h2>4. Driver Obligations</h2><p>Drivers using the Platform agree to comply with all dispatch rules, availability enforcement mechanisms, acceptance windows, and delivery execution requirements. Failure to comply may result in restricted access, suspension, or permanent removal from the Platform.</p><h2>5. Payments &amp; Revenue Protection</h2><p>The Platform enforces payment validation, acceptance logic, and revenue protection controls. Saber Tech reserves the right to delay, withhold, or reverse payments in cases of suspected fraud, policy violations, failed deliveries, or disputes.</p><h2>6. Prohibited Activities</h2><p>Users may not misuse the Platform, attempt to bypass enforcement systems, manipulate availability status, falsify delivery records, interfere with system integrity, or engage in unlawful activities. Violations may result in immediate termination.</p><h2>7. Intellectual Property</h2><p>All Platform content, software, systems, trademarks, and proprietary technology are owned by Saber Tech. Unauthorized copying, modification, or distribution is strictly prohibited.</p><h2>8. Service Availability</h2><p>While we strive for continuous availability, Saber Tech does not guarantee uninterrupted access. The Platform may be temporarily unavailable due to maintenance, updates, or technical issues.</p><h2>9. Limitation of Liability</h2><p>To the maximum extent permitted by law, Saber Tech shall not be liable for indirect, incidental, or consequential damages, including lost profits, data loss, or service interruptions arising from Platform use.</p><h2>10. Termination</h2><p>Saber Tech reserves the right to suspend or terminate access at any time for violations of these Terms, operational risk, or legal compliance reasons.</p><h2>11. Governing Law</h2><p>These Terms shall be governed and interpreted in accordance with the laws of the applicable operating jurisdiction, without regard to conflict of law principles.</p><h2>12. Acceptance</h2><p>By using the Platform, you acknowledge that you have read, understood, and agreed to these Terms &amp; Conditions.</p>",
+      "template": "legal",
+      "seo_title": "",
+      "seo_description": "",
+      "is_published": true,
+      "show_in_main_nav": false,
+      "show_in_footer": true,
+      "sort_order": 100
+    }
+  },
+  {
+    "model": "cms.contentblock",
+    "pk": 1,
+    "fields": {
+      "created_at": "2026-05-22T16:49:12.759Z",
+      "updated_at": "2026-05-22T16:49:12.759Z",
+      "page": 1,
+      "heading": "Get Started",
+      "eyebrow": "",
+      "body": "<p>Submit delivery details quickly through our platform for seamless scheduling.</p>",
+      "link_label": "Get Started",
+      "link_url": "/atmp-courier/",
+      "image": "",
+      "sort_order": 0,
+      "is_active": true
+    }
+  },
+  {
+    "model": "cms.contentblock",
+    "pk": 2,
+    "fields": {
+      "created_at": "2026-05-22T16:49:12.764Z",
+      "updated_at": "2026-05-22T16:49:12.764Z",
+      "page": 1,
+      "heading": "Learn More",
+      "eyebrow": "",
+      "body": "<p>Explore the command layer that protects every delivery before dispatch.</p>",
+      "link_label": "Learn More",
+      "link_url": "/atmp-core/",
+      "image": "",
+      "sort_order": 10,
+      "is_active": true
+    }
+  },
+  {
+    "model": "cms.contentblock",
+    "pk": 3,
+    "fields": {
+      "created_at": "2026-05-22T16:49:12.767Z",
+      "updated_at": "2026-05-22T16:49:12.767Z",
+      "page": 1,
+      "heading": "iOS - Driver",
+      "eyebrow": "",
+      "body": "<p>Download the SaberTech Driver app from the App Store.</p>",
+      "link_label": "iOS - Driver",
+      "link_url": "https://apps.apple.com/gb/app/sabertech-driver/id6759118586",
+      "image": "",
+      "sort_order": 20,
+      "is_active": true
+    }
+  },
+  {
+    "model": "cms.contentblock",
+    "pk": 4,
+    "fields": {
+      "created_at": "2026-05-22T16:49:12.771Z",
+      "updated_at": "2026-05-22T16:49:12.771Z",
+      "page": 1,
+      "heading": "Android - Driver",
+      "eyebrow": "",
+      "body": "<p>Download the SaberTech Driver app from Google Play.</p>",
+      "link_label": "Android - Driver",
+      "link_url": "https://play.google.com/store/apps/details?id=com.sabertech.driver",
+      "image": "",
+      "sort_order": 30,
+      "is_active": true
+    }
+  },
+  {
+    "model": "cms.contentblock",
+    "pk": 5,
+    "fields": {
+      "created_at": "2026-05-22T16:49:12.775Z",
+      "updated_at": "2026-05-22T16:49:12.775Z",
+      "page": 1,
+      "heading": "From Pickup to Perfect Delivery",
+      "eyebrow": "",
+      "body": "<p>Place your order, get a driver assigned, track in real time, and confirm successful delivery.</p>",
+      "link_label": "",
+      "link_url": "",
+      "image": "",
+      "sort_order": 40,
+      "is_active": true
+    }
+  },
+  {
+    "model": "cms.contentblock",
+    "pk": 6,
+    "fields": {
+      "created_at": "2026-05-22T16:49:12.779Z",
+      "updated_at": "2026-05-22T16:49:12.779Z",
+      "page": 1,
+      "heading": "Delivery With Complete Accountability",
+      "eyebrow": "",
+      "body": "<p>Our platform coordinates drivers, pickups, and drop-offs, simplifying delivery operations for businesses across multiple markets.</p>",
+      "link_label": "Launch Customer Order Portal",
+      "link_url": "https://sabertech-php-api.24aupl12h4kp.us-south.codeengine.appdomain.cloud/customer-pwa/",
+      "image": "",
+      "sort_order": 50,
+      "is_active": true
+    }
+  },
+  {
+    "model": "cms.contentblock",
+    "pk": 7,
+    "fields": {
+      "created_at": "2026-05-22T16:49:12.784Z",
+      "updated_at": "2026-05-22T16:49:12.784Z",
+      "page": 1,
+      "heading": "Every Package, Perfectly Managed",
+      "eyebrow": "",
+      "body": "<p>Business delivery, consumer shipments, e-commerce support, multi-market coverage, real-time tracking, professional drivers, transparent operations, and platform-powered efficiency.</p>",
+      "link_label": "Read More About ATMP-Courier",
+      "link_url": "/atmp-courier/",
+      "image": "",
+      "sort_order": 60,
+      "is_active": true
+    }
+  },
+  {
+    "model": "cms.contentblock",
+    "pk": 8,
+    "fields": {
+      "created_at": "2026-05-22T16:49:12.787Z",
+      "updated_at": "2026-05-22T16:49:12.787Z",
+      "page": 1,
+      "heading": "Driver Access",
+      "eyebrow": "",
+      "body": "<p>Sign up or log in to the ATMP-Courier driver platform for seamless, efficient dispatch management.</p>",
+      "link_label": "Driver Sign Up",
+      "link_url": "https://sabertech-php-api.24aupl12h4kp.us-south.codeengine.appdomain.cloud/driver-signup/",
+      "image": "",
+      "sort_order": 70,
+      "is_active": true
+    }
+  },
+  {
+    "model": "cms.contentblock",
+    "pk": 22,
+    "fields": {
+      "created_at": "2026-05-22T17:38:39.418Z",
+      "updated_at": "2026-05-22T17:38:39.418Z",
+      "page": 2,
+      "heading": "Welcome",
+      "eyebrow": "",
+      "body": "",
+      "link_label": "",
+      "link_url": "",
+      "image": "",
+      "sort_order": 0,
+      "is_active": true
+    }
+  },
+  {
+    "model": "cms.contentblock",
+    "pk": 23,
+    "fields": {
+      "created_at": "2026-05-22T17:38:39.429Z",
+      "updated_at": "2026-05-22T17:38:39.429Z",
+      "page": 2,
+      "heading": "Overview",
+      "eyebrow": "",
+      "body": "",
+      "link_label": "",
+      "link_url": "",
+      "image": "",
+      "sort_order": 10,
+      "is_active": true
+    }
+  },
+  {
+    "model": "cms.contentblock",
+    "pk": 24,
+    "fields": {
+      "created_at": "2026-05-22T17:38:39.438Z",
+      "updated_at": "2026-05-22T17:38:39.438Z",
+      "page": 2,
+      "heading": "Driver Sign Up",
+      "eyebrow": "",
+      "body": "",
+      "link_label": "",
+      "link_url": "",
+      "image": "",
+      "sort_order": 20,
+      "is_active": true
+    }
+  },
+  {
+    "model": "cms.contentblock",
+    "pk": 25,
+    "fields": {
+      "created_at": "2026-05-22T17:38:39.448Z",
+      "updated_at": "2026-05-22T17:38:39.448Z",
+      "page": 2,
+      "heading": "Verification & Documents",
+      "eyebrow": "",
+      "body": "",
+      "link_label": "",
+      "link_url": "",
+      "image": "",
+      "sort_order": 30,
+      "is_active": true
+    }
+  },
+  {
+    "model": "cms.contentblock",
+    "pk": 26,
+    "fields": {
+      "created_at": "2026-05-22T17:38:39.457Z",
+      "updated_at": "2026-05-22T17:38:39.457Z",
+      "page": 2,
+      "heading": "Dispatch Rules",
+      "eyebrow": "",
+      "body": "",
+      "link_label": "",
+      "link_url": "",
+      "image": "",
+      "sort_order": 40,
+      "is_active": true
+    }
+  },
+  {
+    "model": "cms.contentblock",
+    "pk": 27,
+    "fields": {
+      "created_at": "2026-05-22T17:38:39.466Z",
+      "updated_at": "2026-05-22T17:38:39.466Z",
+      "page": 2,
+      "heading": "Driver App (PWA)",
+      "eyebrow": "",
+      "body": "",
+      "link_label": "",
+      "link_url": "",
+      "image": "",
+      "sort_order": 50,
+      "is_active": true
+    }
+  },
+  {
+    "model": "cms.contentblock",
+    "pk": 28,
+    "fields": {
+      "created_at": "2026-05-22T17:38:39.475Z",
+      "updated_at": "2026-05-22T17:38:39.475Z",
+      "page": 2,
+      "heading": "Earnings & Protections",
+      "eyebrow": "",
+      "body": "",
+      "link_label": "",
+      "link_url": "",
+      "image": "",
+      "sort_order": 60,
+      "is_active": true
+    }
+  },
+  {
+    "model": "cms.contentblock",
+    "pk": 29,
+    "fields": {
+      "created_at": "2026-05-22T17:38:39.480Z",
+      "updated_at": "2026-05-22T17:38:39.480Z",
+      "page": 2,
+      "heading": "Support",
+      "eyebrow": "",
+      "body": "",
+      "link_label": "",
+      "link_url": "",
+      "image": "",
+      "sort_order": 70,
+      "is_active": true
+    }
+  },
+  {
+    "model": "cms.navigationlink",
+    "pk": 1,
+    "fields": {
+      "created_at": "2026-05-22T16:49:12.847Z",
+      "updated_at": "2026-05-22T16:49:12.847Z",
+      "label": "Home",
+      "url": "/",
+      "location": "header",
+      "sort_order": 0,
+      "open_in_new_tab": false,
+      "is_active": true
+    }
+  },
+  {
+    "model": "cms.navigationlink",
+    "pk": 2,
+    "fields": {
+      "created_at": "2026-05-22T16:49:12.850Z",
+      "updated_at": "2026-05-22T16:49:12.850Z",
+      "label": "ATMP Courier",
+      "url": "/atmp-courier/",
+      "location": "header",
+      "sort_order": 10,
+      "open_in_new_tab": false,
+      "is_active": true
+    }
+  },
+  {
+    "model": "cms.navigationlink",
+    "pk": 3,
+    "fields": {
+      "created_at": "2026-05-22T16:49:12.854Z",
+      "updated_at": "2026-05-22T16:49:12.854Z",
+      "label": "ATMP-Core",
+      "url": "/atmp-core/",
+      "location": "header",
+      "sort_order": 20,
+      "open_in_new_tab": false,
+      "is_active": true
+    }
+  },
+  {
+    "model": "cms.navigationlink",
+    "pk": 4,
+    "fields": {
+      "created_at": "2026-05-22T16:49:12.858Z",
+      "updated_at": "2026-05-22T16:49:12.858Z",
+      "label": "Customer Order",
+      "url": "/customer-order/",
+      "location": "header",
+      "sort_order": 30,
+      "open_in_new_tab": false,
+      "is_active": true
+    }
+  },
+  {
+    "model": "cms.navigationlink",
+    "pk": 5,
+    "fields": {
+      "created_at": "2026-05-22T16:49:12.862Z",
+      "updated_at": "2026-05-22T16:49:12.862Z",
+      "label": "Driver Access",
+      "url": "/driver-access/",
+      "location": "header",
+      "sort_order": 40,
+      "open_in_new_tab": false,
+      "is_active": true
+    }
+  },
+  {
+    "model": "cms.navigationlink",
+    "pk": 6,
+    "fields": {
+      "created_at": "2026-05-22T16:49:12.865Z",
+      "updated_at": "2026-05-22T16:49:12.865Z",
+      "label": "Leadership",
+      "url": "/leadership/",
+      "location": "header",
+      "sort_order": 50,
+      "open_in_new_tab": false,
+      "is_active": true
+    }
+  },
+  {
+    "model": "cms.navigationlink",
+    "pk": 7,
+    "fields": {
+      "created_at": "2026-05-22T16:49:12.869Z",
+      "updated_at": "2026-05-22T16:49:12.869Z",
+      "label": "Press",
+      "url": "/press/",
+      "location": "header",
+      "sort_order": 60,
+      "open_in_new_tab": false,
+      "is_active": true
+    }
+  },
+  {
+    "model": "cms.navigationlink",
+    "pk": 8,
+    "fields": {
+      "created_at": "2026-05-22T16:49:12.872Z",
+      "updated_at": "2026-05-22T16:49:12.872Z",
+      "label": "Contact Us",
+      "url": "/contact-us/",
+      "location": "header",
+      "sort_order": 70,
+      "open_in_new_tab": false,
+      "is_active": true
+    }
+  },
+  {
+    "model": "cms.navigationlink",
+    "pk": 9,
+    "fields": {
+      "created_at": "2026-05-22T16:49:12.877Z",
+      "updated_at": "2026-05-22T16:49:12.877Z",
+      "label": "ATMP Courier",
+      "url": "/atmp-courier/",
+      "location": "footer_quick",
+      "sort_order": 10,
+      "open_in_new_tab": false,
+      "is_active": true
+    }
+  },
+  {
+    "model": "cms.navigationlink",
+    "pk": 10,
+    "fields": {
+      "created_at": "2026-05-22T16:49:12.880Z",
+      "updated_at": "2026-05-22T16:49:12.880Z",
+      "label": "ATMP-Core",
+      "url": "/atmp-core/",
+      "location": "footer_quick",
+      "sort_order": 20,
+      "open_in_new_tab": false,
+      "is_active": true
+    }
+  },
+  {
+    "model": "cms.navigationlink",
+    "pk": 11,
+    "fields": {
+      "created_at": "2026-05-22T16:49:12.884Z",
+      "updated_at": "2026-05-22T16:49:12.884Z",
+      "label": "Customer Order",
+      "url": "/customer-order/",
+      "location": "footer_quick",
+      "sort_order": 30,
+      "open_in_new_tab": false,
+      "is_active": true
+    }
+  },
+  {
+    "model": "cms.navigationlink",
+    "pk": 12,
+    "fields": {
+      "created_at": "2026-05-22T16:49:12.888Z",
+      "updated_at": "2026-05-22T16:49:12.888Z",
+      "label": "Driver Access",
+      "url": "/driver-access/",
+      "location": "footer_quick",
+      "sort_order": 40,
+      "open_in_new_tab": false,
+      "is_active": true
+    }
+  },
+  {
+    "model": "cms.navigationlink",
+    "pk": 13,
+    "fields": {
+      "created_at": "2026-05-22T16:49:12.891Z",
+      "updated_at": "2026-05-22T16:49:12.891Z",
+      "label": "Leadership",
+      "url": "/leadership/",
+      "location": "footer_quick",
+      "sort_order": 50,
+      "open_in_new_tab": false,
+      "is_active": true
+    }
+  },
+  {
+    "model": "cms.navigationlink",
+    "pk": 14,
+    "fields": {
+      "created_at": "2026-05-22T16:49:12.894Z",
+      "updated_at": "2026-05-22T16:49:12.894Z",
+      "label": "Press",
+      "url": "/press/",
+      "location": "footer_quick",
+      "sort_order": 60,
+      "open_in_new_tab": false,
+      "is_active": true
+    }
+  },
+  {
+    "model": "cms.navigationlink",
+    "pk": 15,
+    "fields": {
+      "created_at": "2026-05-22T16:49:12.899Z",
+      "updated_at": "2026-05-22T16:49:12.899Z",
+      "label": "Contact",
+      "url": "/contact-us/",
+      "location": "footer_quick",
+      "sort_order": 70,
+      "open_in_new_tab": false,
+      "is_active": true
+    }
+  },
+  {
+    "model": "cms.navigationlink",
+    "pk": 16,
+    "fields": {
+      "created_at": "2026-05-22T16:49:12.902Z",
+      "updated_at": "2026-05-22T16:49:12.902Z",
+      "label": "About",
+      "url": "/about/",
+      "location": "footer_support",
+      "sort_order": 80,
+      "open_in_new_tab": false,
+      "is_active": true
+    }
+  },
+  {
+    "model": "cms.navigationlink",
+    "pk": 19,
+    "fields": {
+      "created_at": "2026-05-22T16:49:12.913Z",
+      "updated_at": "2026-05-22T16:49:12.913Z",
+      "label": "Customer Order Portal",
+      "url": "https://sabertech-php-api.24aupl12h4kp.us-south.codeengine.appdomain.cloud/customer-pwa/",
+      "location": "footer_support",
+      "sort_order": 200,
+      "open_in_new_tab": true,
+      "is_active": true
+    }
+  },
+  {
+    "model": "cms.navigationlink",
+    "pk": 20,
+    "fields": {
+      "created_at": "2026-05-22T16:49:12.917Z",
+      "updated_at": "2026-05-22T16:49:12.917Z",
+      "label": "Driver App",
+      "url": "https://sabertech-php-api.24aupl12h4kp.us-south.codeengine.appdomain.cloud/driver-pwa/",
+      "location": "footer_support",
+      "sort_order": 201,
+      "open_in_new_tab": true,
+      "is_active": true
+    }
+  },
+  {
+    "model": "cms.teammember",
+    "pk": 1,
+    "fields": {
+      "created_at": "2026-05-22T16:49:12.924Z",
+      "updated_at": "2026-05-22T16:49:12.924Z",
+      "name": "Megan Patrick",
+      "title": "Chief Executive Officer",
+      "email": "mpatrick@sabertechlogistics.com",
+      "phone": "(907) 250-8765",
+      "bio": "",
+      "photo": "team/ceo-1.jpg",
+      "sort_order": 0,
+      "is_featured": true,
+      "is_active": true
+    }
+  },
+  {
+    "model": "cms.teammember",
+    "pk": 2,
+    "fields": {
+      "created_at": "2026-05-22T16:49:12.927Z",
+      "updated_at": "2026-05-22T16:49:12.927Z",
+      "name": "Sharon Culpepper",
+      "title": "Chief Personnel Officer",
+      "email": "sculpepper@sabertechlogistics.com",
+      "phone": "",
+      "bio": "",
+      "photo": "team/cpo-1.jpg",
+      "sort_order": 10,
+      "is_featured": false,
+      "is_active": true
+    }
+  },
+  {
+    "model": "cms.teammember",
+    "pk": 3,
+    "fields": {
+      "created_at": "2026-05-22T16:49:12.931Z",
+      "updated_at": "2026-05-22T16:49:12.931Z",
+      "name": "Val Olson",
+      "title": "Chief Public Relations Officer",
+      "email": "volson@sabertechlogistics.com",
+      "phone": "",
+      "bio": "",
+      "photo": "team/cpro-1.jpg",
+      "sort_order": 20,
+      "is_featured": false,
+      "is_active": true
+    }
+  },
+  {
+    "model": "cms.teammember",
+    "pk": 4,
+    "fields": {
+      "created_at": "2026-05-22T16:49:12.934Z",
+      "updated_at": "2026-05-22T16:49:12.934Z",
+      "name": "Cory Rankin",
+      "title": "Chief Operating Officer",
+      "email": "crankin@sabertechlogistics.com",
+      "phone": "",
+      "bio": "",
+      "photo": "team/coo-1.jpg",
+      "sort_order": 30,
+      "is_featured": true,
+      "is_active": true
+    }
+  },
+  {
+    "model": "cms.teammember",
+    "pk": 5,
+    "fields": {
+      "created_at": "2026-05-22T16:49:12.938Z",
+      "updated_at": "2026-05-22T16:49:12.938Z",
+      "name": "Jennifer Rynearson",
+      "title": "Chief Logistics Officer",
+      "email": "jrynearson@sabertechlogistics.com",
+      "phone": "",
+      "bio": "",
+      "photo": "team/clo-1.jpg",
+      "sort_order": 40,
+      "is_featured": false,
+      "is_active": true
+    }
+  },
+  {
+    "model": "cms.teammember",
+    "pk": 6,
+    "fields": {
+      "created_at": "2026-05-22T16:49:12.941Z",
+      "updated_at": "2026-05-22T16:49:12.941Z",
+      "name": "Christine Alva Armas",
+      "title": "Chief Vision Officer",
+      "email": "carmas@sabertechlogistics.com",
+      "phone": "",
+      "bio": "",
+      "photo": "team/cvo-1.jpg",
+      "sort_order": 50,
+      "is_featured": false,
+      "is_active": true
+    }
+  },
+  {
+    "model": "cms.teammember",
+    "pk": 7,
+    "fields": {
+      "created_at": "2026-05-22T16:49:12.945Z",
+      "updated_at": "2026-05-22T16:49:12.945Z",
+      "name": "Hamza Bhatti",
+      "title": "Chief Technology Officer",
+      "email": "",
+      "phone": "",
+      "bio": "",
+      "photo": "team/cto-1.jpg",
+      "sort_order": 60,
+      "is_featured": true,
+      "is_active": true
+    }
+  },
+  {
+    "model": "cms.teammember",
+    "pk": 8,
+    "fields": {
+      "created_at": "2026-05-22T16:49:12.949Z",
+      "updated_at": "2026-05-22T16:49:12.949Z",
+      "name": "Afnan Ahmed Bhutto",
+      "title": "Chief Marketing Officer",
+      "email": "",
+      "phone": "",
+      "bio": "",
+      "photo": "team/cmo-1.jpg",
+      "sort_order": 70,
+      "is_featured": false,
+      "is_active": true
+    }
+  },
+  {
+    "model": "cms.teammember",
+    "pk": 9,
+    "fields": {
+      "created_at": "2026-05-22T16:49:12.952Z",
+      "updated_at": "2026-05-22T16:49:12.952Z",
+      "name": "Ian Carter",
+      "title": "Chief Communications Officer",
+      "email": "icarter@sabertechlogistics.com",
+      "phone": "",
+      "bio": "",
+      "photo": "team/cco-1.jpg",
+      "sort_order": 80,
+      "is_featured": false,
+      "is_active": true
+    }
+  },
+  {
+    "model": "cms.teammember",
+    "pk": 10,
+    "fields": {
+      "created_at": "2026-05-22T17:06:53.369Z",
+      "updated_at": "2026-05-22T17:06:53.369Z",
+      "name": "Anli Goldsmith",
+      "title": "Chief Science Officer",
+      "email": "cagoldsmith@sabertechlogistics.com",
+      "phone": "",
+      "bio": "",
+      "photo": "",
+      "sort_order": 90,
+      "is_featured": false,
+      "is_active": true
+    }
   }
-},
-{
-  "model": "cms.page",
-  "pk": 1,
-  "fields": {
-    "created_at": "2026-05-22T16:49:12.711Z",
-    "updated_at": "2026-05-22T16:49:12.711Z",
-    "title": "Every Delivery Executed with Absolute Reliability",
-    "slug": "",
-    "nav_label": "Home",
-    "subtitle": "Every order is managed with precision, transparency, and professionalism, giving you confidence and control over your delivery operations.",
-    "eyebrow": "Secure. Transparent. Always.",
-    "body": "<p>Saber Tech empowers businesses with disciplined execution, seamless delivery, and operational precision. At Saber Tech, we redefine last-mile delivery by combining smart technology with disciplined, operator-led execution.</p>",
-    "template": "home",
-    "seo_title": "",
-    "seo_description": "",
-    "is_published": true,
-    "show_in_main_nav": true,
-    "show_in_footer": false,
-    "sort_order": 0
-  }
-},
-{
-  "model": "cms.page",
-  "pk": 2,
-  "fields": {
-    "created_at": "2026-05-22T16:49:12.716Z",
-    "updated_at": "2026-05-22T17:37:39.728Z",
-    "title": "ATMP Courier",
-    "slug": "atmp-courier",
-    "nav_label": "",
-    "subtitle": "",
-    "eyebrow": "",
-    "body": "<h2>DRIVER GUIDE</h2><h2>Welcome to Your Seamless Delivery Experience</h2><p>Step into a platform designed to make every route predictable, fair, and efficient. ATMP-Courier puts you in control, matching deliveries to the right vehicle, paying jobs upfront, and eliminating wasted time so you can focus on the road.</p><p>Our system listens to you. Every insight from real deliveries shapes smarter dispatching, optimized routes, and smoother workflows. When challenges arise, the platform adapts, keeping operations fast, transparent, and consistent.</p><p>This isn't just technology; it's a partner built for professionals who value clarity, precision, and the power to influence how every delivery gets done.</p>",
-    "template": "standard",
-    "seo_title": "",
-    "seo_description": "",
-    "is_published": true,
-    "show_in_main_nav": true,
-    "show_in_footer": true,
-    "sort_order": 10
-  }
-},
-{
-  "model": "cms.page",
-  "pk": 3,
-  "fields": {
-    "created_at": "2026-05-22T16:49:12.720Z",
-    "updated_at": "2026-05-22T16:49:12.720Z",
-    "title": "ATMP-CORE",
-    "slug": "atmp-core",
-    "nav_label": "ATMP-Core",
-    "subtitle": "",
-    "eyebrow": "",
-    "body": "<h2>ATMP-Core: Discipline Before Dispatch</h2><p>ATMP-core acts as a control gate for every delivery. Jobs only go live when drivers are available, vehicles are suitable, and terms are confirmed. By enforcing readiness before movement, the system prevents breakdowns, delays, and wasted effort, creating delivery operations built on discipline, not chance.</p><h2>Control Before Motion</h2><p>Every delivery decision should be made before the wheels move.</p><h2>Design Goal</h2><p>Protect revenue by enforcing rules before execution.</p><p>ATMP-core is where order replaces chaos. It sets execution rules in advance, confirming readiness, aligning capacity, and locking in accountability before a job is released. Nothing is assumed. Nothing is improvised.</p><p>By making design decisions upstream, ATMP-core eliminates costly downstream corrections. Loads fit. Routes make sense. Operators stay in control.</p><p>Built as a flexible command layer, ATMP-core evolves as operations expand, without added friction, rebuilds, or hidden complexity. It's not software that reacts. It's the infrastructure that prevents.</p><h2>Systems That Enforce Discipline</h2><h3>Expansion by Design</h3><p>Built to grow cleanly across markets and workflows.</p><h3>Funds First</h3><p>Delivery only begins once payment is secured.</p><h3>Always Verified</h3><p>Dispatch runs on real-time readiness, not assumptions.</p><h3>Right Fit, Every Time</h3><p>Jobs align with vehicle capacity from the start.</p>",
-    "template": "standard",
-    "seo_title": "",
-    "seo_description": "",
-    "is_published": true,
-    "show_in_main_nav": true,
-    "show_in_footer": true,
-    "sort_order": 20
-  }
-},
-{
-  "model": "cms.page",
-  "pk": 4,
-  "fields": {
-    "created_at": "2026-05-22T16:49:12.724Z",
-    "updated_at": "2026-05-22T16:49:12.724Z",
-    "title": "CUSTOMER",
-    "slug": "customer-order",
-    "nav_label": "Customer Order",
-    "subtitle": "",
-    "eyebrow": "",
-    "body": "<h2>Customer Order Portal</h2><p>Use the ATMP-Courier Customer Portal to schedule deliveries effortlessly. With enforced driver availability and secure payment validation, your orders are guaranteed to be handled reliably and on time.</p><p><a class=\"pill-button\" href=\"https://sabertech-php-api.24aupl12h4kp.us-south.codeengine.appdomain.cloud/customer-pwa/\" target=\"_blank\" rel=\"noopener\">Launch Customer Order Portal</a></p><p>The Customer Portal has Smart scheduling, secure payments, and happy margins. The Customer Portal ensures every delivery is possible before it even hits the system.</p><h2>Live Access</h2><p>This link opens in a new tab.</p><h2>Why ATMP Uses Progressive Web Apps</h2><p>ATMP leverages Progressive Web Apps (PWAs) to ensure consistent business logic across all devices. Updates deploy instantly, no app store delays, so owners and operators maintain full control over live operations.</p><p>PWAs deliver real-time push notifications, offline resilience, and secure access while reducing maintenance overhead. This approach minimizes downtime and operational friction, supporting efficiency and profitability for every delivery.</p>",
-    "template": "standard",
-    "seo_title": "",
-    "seo_description": "",
-    "is_published": true,
-    "show_in_main_nav": true,
-    "show_in_footer": true,
-    "sort_order": 30
-  }
-},
-{
-  "model": "cms.page",
-  "pk": 5,
-  "fields": {
-    "created_at": "2026-05-22T16:49:12.728Z",
-    "updated_at": "2026-05-22T16:49:12.728Z",
-    "title": "DRIVER",
-    "slug": "driver-access",
-    "nav_label": "Driver Access",
-    "subtitle": "",
-    "eyebrow": "",
-    "body": "<h2>Driver Access Portal</h2><p>Join or access the ATMP-Courier driver platform, built to make every dispatch smooth, fast, and hassle-free.</p><p><a class=\"pill-button\" href=\"https://sabertech-php-api.24aupl12h4kp.us-south.codeengine.appdomain.cloud/driver-signup/\" target=\"_blank\" rel=\"noopener\">Driver Sign Up</a> <a class=\"pill-button pill-filled\" href=\"https://sabertech-php-api.24aupl12h4kp.us-south.codeengine.appdomain.cloud/driver-pwa/\" target=\"_blank\" rel=\"noopener\">Driver Sign In</a></p><p>Drivers connect with ATMP-Courier through our Progressive Web App, built for real-time dispatch. Smart notifications and enforced acceptance windows keep operations predictable, reduce downtime, and get you on the road faster.</p><h2>Notes</h2><p>Links open in a new tab.</p><h2>Why ATMP Uses Progressive Web Apps</h2><p>ATMP leverages Progressive Web Apps (PWAs) to ensure consistent business logic across all devices. Updates deploy instantly, no app store delays, so owners and operators maintain full control over live operations.</p><p>PWAs deliver real-time push notifications, offline resilience, and secure access while reducing maintenance overhead. This approach minimizes downtime and operational friction, supporting efficiency and profitability for every delivery.</p>",
-    "template": "standard",
-    "seo_title": "",
-    "seo_description": "",
-    "is_published": true,
-    "show_in_main_nav": true,
-    "show_in_footer": true,
-    "sort_order": 40
-  }
-},
-{
-  "model": "cms.page",
-  "pk": 6,
-  "fields": {
-    "created_at": "2026-05-22T16:49:12.733Z",
-    "updated_at": "2026-05-22T16:49:12.733Z",
-    "title": "Executive Leadership",
-    "slug": "leadership",
-    "nav_label": "Leadership",
-    "subtitle": "Saber Tech Executive Team",
-    "eyebrow": "",
-    "body": "",
-    "template": "leadership",
-    "seo_title": "",
-    "seo_description": "",
-    "is_published": true,
-    "show_in_main_nav": true,
-    "show_in_footer": true,
-    "sort_order": 50
-  }
-},
-{
-  "model": "cms.page",
-  "pk": 7,
-  "fields": {
-    "created_at": "2026-05-22T16:49:12.737Z",
-    "updated_at": "2026-05-22T16:49:12.737Z",
-    "title": "Saber Tech Launches Cutting-Edge Platform to Transform Last-Mile Delivery",
-    "slug": "press",
-    "nav_label": "Press",
-    "subtitle": "",
-    "eyebrow": "",
-    "body": "<p>Saber Tech today announced the beta launch of its Last-Mile Courier Platform, a production-ready system the company operates to power real-world delivery execution and visibility. This milestone marks Saber Tech's first fully deployable platform, now running live across the United States and Canada.</p><p>The beta focuses exclusively on last-mile courier operations, delivering reliable dispatch coordination, real-time tracking, exception handling, and operational visibility across local and regional networks. It is purpose-built to ensure on-time, transparent, and professional delivery execution, without attempting to serve as a full supply chain or transportation management system.</p><p>By directly operating the platform, Saber Tech maintains complete control over performance, reliability, and day-to-day operations, allowing the team to refine and optimize the system in real-world conditions.</p><p>While the company envisions a broader logistics ecosystem, this beta prioritizes stability and consistent last-mile performance, laying the foundation for scalable, dependable delivery solutions.</p><p>With this beta launch, Saber Tech solidifies its reputation as an operator-first technology company, deploying systems only when they are proven ready for real-world operations. Each release is deliberately scoped to ensure fully deployable, production-ready performance, with additional platform functionality introduced only when it meets the same rigorous operational standards.</p><h2>Media Contact</h2><p>Val Olson<br>Chief Public Relations Officer<br>Saber Tech<br>Email: volson@sabertechlogistics.com</p>",
-    "template": "standard",
-    "seo_title": "",
-    "seo_description": "",
-    "is_published": true,
-    "show_in_main_nav": true,
-    "show_in_footer": true,
-    "sort_order": 60
-  }
-},
-{
-  "model": "cms.page",
-  "pk": 8,
-  "fields": {
-    "created_at": "2026-05-22T16:49:12.741Z",
-    "updated_at": "2026-05-22T16:49:12.741Z",
-    "title": "CONTACT",
-    "slug": "contact-us",
-    "nav_label": "Contact Us",
-    "subtitle": "",
-    "eyebrow": "",
-    "body": "<h2>Get in Touch with Saber Tech</h2><p>Saber Tech is here to answer your questions, streamline your delivery needs, and provide reliable support whenever you need it.</p><h2>Message</h2><p>Name, email, and message are required. This form does not process submissions on the server.</p>",
-    "template": "contact",
-    "seo_title": "",
-    "seo_description": "",
-    "is_published": true,
-    "show_in_main_nav": true,
-    "show_in_footer": true,
-    "sort_order": 70
-  }
-},
-{
-  "model": "cms.page",
-  "pk": 9,
-  "fields": {
-    "created_at": "2026-05-22T16:49:12.745Z",
-    "updated_at": "2026-05-22T16:49:12.745Z",
-    "title": "ABOUT",
-    "slug": "about",
-    "nav_label": "About",
-    "subtitle": "",
-    "eyebrow": "",
-    "body": "<h2>About Saber Tech</h2><p>Saber Tech builds owner and operator centric logistics infrastructure for last-mile delivery execution.</p><p>Saber Tech is an infrastructure-first technology company focused on logistics execution systems designed for owners and operators. Our platforms enforce rules, automate workflows, and protect profit margins while supporting scalable growth.</p><h2>Focus</h2><p>Owner and operator controlled execution infrastructure.</p>",
-    "template": "standard",
-    "seo_title": "",
-    "seo_description": "",
-    "is_published": true,
-    "show_in_main_nav": false,
-    "show_in_footer": true,
-    "sort_order": 80
-  }
-},
-{
-  "model": "cms.page",
-  "pk": 10,
-  "fields": {
-    "created_at": "2026-05-22T16:49:12.750Z",
-    "updated_at": "2026-05-22T16:49:12.750Z",
-    "title": "Privacy Policy",
-    "slug": "privacy-policy",
-    "nav_label": "",
-    "subtitle": "",
-    "eyebrow": "",
-    "body": "<p>Effective Date: 1/29/26</p><p>Saber Tech (“Saber Tech,” “we,” “our,” or “us”) operates the ATMP-Core and ATMP-Courier platforms, including all related websites, applications, and services (collectively, the “Platform”). We are committed to protecting the privacy, confidentiality, and security of all users who interact with our Platform.</p><p>This Privacy Policy explains how we collect, use, store, share, and protect your personal information when you access or use our services as a customer, driver, business partner, or visitor.</p><h2>1. Information We Collect</h2><p>We collect information necessary to operate a secure, efficient, and enforcement-driven logistics platform.</p><h3>Personal Information</h3><p>When you register or use the Platform, we may collect personal information such as your name, email address, phone number, mailing address, login credentials, and profile details. For drivers, we may also collect government-issued identification, driver’s license details, vehicle information, insurance documents, and verification records.</p><h3>Financial Information</h3><p>To process payments and protect revenue integrity, we may collect billing details, payment method information, transaction history, and payout records. Payment data is processed securely through authorized third-party payment providers.</p><h3>Operational &amp; Usage Information</h3><p>We automatically collect technical and operational data, including IP address, browser type, device information, timestamps, acceptance windows, availability status, dispatch activity, and delivery performance metrics.</p><h3>Location Information</h3><p>Location data may be collected in real time to enable dispatch coordination, route optimization, availability enforcement, and delivery confirmation.</p><h2>2. How We Use Your Information</h2><p>We use collected information to operate and improve the Platform, including but not limited to managing dispatch workflows, validating driver availability, enforcing acceptance windows, processing payments, preventing fraud, and maintaining system accountability.</p><p>Your information helps us ensure operational accuracy, system reliability, regulatory compliance, and secure execution of deliveries from order creation through completion.</p><h2>3. Data Sharing and Disclosure</h2><p>Saber Tech does not sell or rent personal data.</p><p>We may share information with trusted third parties such as payment processors, identity verification providers, cloud infrastructure partners, and analytics services solely for operational purposes. We may also disclose information when required by law, regulation, court order, or to protect the rights, safety, or security of the Platform and its users.</p><h2>4. Data Retention</h2><p>We retain personal and operational data only for as long as necessary to fulfill business, legal, and regulatory requirements. Upon account termination, data may be retained for compliance, dispute resolution, fraud prevention, or audit purposes and may later be anonymized for analytical use.</p><h2>5. Data Security</h2><p>We implement industry-standard technical and organizational safeguards, including encryption, access controls, authentication systems, and continuous monitoring. While we strive to protect all data, users acknowledge that no system can be guaranteed 100% secure.</p><h2>6. User Rights</h2><p>Users may request access, correction, or deletion of personal information, subject to applicable laws and operational requirements. Requests can be submitted through official support channels and will be reviewed in accordance with legal obligations.</p><h2>7. Policy Updates</h2><p>We may update this Privacy Policy periodically. Continued use of the Platform after changes are posted constitutes acceptance of the updated policy.</p>",
-    "template": "legal",
-    "seo_title": "",
-    "seo_description": "",
-    "is_published": true,
-    "show_in_main_nav": false,
-    "show_in_footer": true,
-    "sort_order": 90
-  }
-},
-{
-  "model": "cms.page",
-  "pk": 11,
-  "fields": {
-    "created_at": "2026-05-22T16:49:12.755Z",
-    "updated_at": "2026-05-22T16:49:12.755Z",
-    "title": "Term & Condition",
-    "slug": "term-and-conditions",
-    "nav_label": "",
-    "subtitle": "",
-    "eyebrow": "",
-    "body": "<p>Effective Date: 1/29/26</p><p>These Terms &amp; Conditions (“Terms”) govern your access to and use of the ATMP-Core and ATMP-Courier platforms operated by Saber Tech. By accessing or using the Platform, you agree to be legally bound by these Terms.</p><h2>1. Platform Purpose</h2><p>ATMP-Courier is an operational logistics and last-mile delivery platform designed to manage dispatch execution, driver availability enforcement, payment validation, and delivery accountability. The Platform is intended for lawful commercial use only.</p><h2>2. User Eligibility</h2><p>You must be at least 18 years old to use the Platform. Drivers must meet all licensing, vehicle, insurance, and verification requirements as defined by Saber Tech and applicable laws.</p><h2>3. Account Registration &amp; Responsibility</h2><p>Users are responsible for maintaining accurate account information and safeguarding login credentials. Any activity conducted through your account is your responsibility. Saber Tech is not liable for unauthorized access caused by user negligence.</p><h2>4. Driver Obligations</h2><p>Drivers using the Platform agree to comply with all dispatch rules, availability enforcement mechanisms, acceptance windows, and delivery execution requirements. Failure to comply may result in restricted access, suspension, or permanent removal from the Platform.</p><h2>5. Payments &amp; Revenue Protection</h2><p>The Platform enforces payment validation, acceptance logic, and revenue protection controls. Saber Tech reserves the right to delay, withhold, or reverse payments in cases of suspected fraud, policy violations, failed deliveries, or disputes.</p><h2>6. Prohibited Activities</h2><p>Users may not misuse the Platform, attempt to bypass enforcement systems, manipulate availability status, falsify delivery records, interfere with system integrity, or engage in unlawful activities. Violations may result in immediate termination.</p><h2>7. Intellectual Property</h2><p>All Platform content, software, systems, trademarks, and proprietary technology are owned by Saber Tech. Unauthorized copying, modification, or distribution is strictly prohibited.</p><h2>8. Service Availability</h2><p>While we strive for continuous availability, Saber Tech does not guarantee uninterrupted access. The Platform may be temporarily unavailable due to maintenance, updates, or technical issues.</p><h2>9. Limitation of Liability</h2><p>To the maximum extent permitted by law, Saber Tech shall not be liable for indirect, incidental, or consequential damages, including lost profits, data loss, or service interruptions arising from Platform use.</p><h2>10. Termination</h2><p>Saber Tech reserves the right to suspend or terminate access at any time for violations of these Terms, operational risk, or legal compliance reasons.</p><h2>11. Governing Law</h2><p>These Terms shall be governed and interpreted in accordance with the laws of the applicable operating jurisdiction, without regard to conflict of law principles.</p><h2>12. Acceptance</h2><p>By using the Platform, you acknowledge that you have read, understood, and agreed to these Terms &amp; Conditions.</p>",
-    "template": "legal",
-    "seo_title": "",
-    "seo_description": "",
-    "is_published": true,
-    "show_in_main_nav": false,
-    "show_in_footer": true,
-    "sort_order": 100
-  }
-},
-{
-  "model": "cms.contentblock",
-  "pk": 1,
-  "fields": {
-    "created_at": "2026-05-22T16:49:12.759Z",
-    "updated_at": "2026-05-22T16:49:12.759Z",
-    "page": 1,
-    "heading": "Get Started",
-    "eyebrow": "",
-    "body": "<p>Submit delivery details quickly through our platform for seamless scheduling.</p>",
-    "link_label": "Get Started",
-    "link_url": "/atmp-courier/",
-    "image": "",
-    "sort_order": 0,
-    "is_active": true
-  }
-},
-{
-  "model": "cms.contentblock",
-  "pk": 2,
-  "fields": {
-    "created_at": "2026-05-22T16:49:12.764Z",
-    "updated_at": "2026-05-22T16:49:12.764Z",
-    "page": 1,
-    "heading": "Learn More",
-    "eyebrow": "",
-    "body": "<p>Explore the command layer that protects every delivery before dispatch.</p>",
-    "link_label": "Learn More",
-    "link_url": "/atmp-core/",
-    "image": "",
-    "sort_order": 10,
-    "is_active": true
-  }
-},
-{
-  "model": "cms.contentblock",
-  "pk": 3,
-  "fields": {
-    "created_at": "2026-05-22T16:49:12.767Z",
-    "updated_at": "2026-05-22T16:49:12.767Z",
-    "page": 1,
-    "heading": "iOS - Driver",
-    "eyebrow": "",
-    "body": "<p>Download the SaberTech Driver app from the App Store.</p>",
-    "link_label": "iOS - Driver",
-    "link_url": "https://apps.apple.com/gb/app/sabertech-driver/id6759118586",
-    "image": "",
-    "sort_order": 20,
-    "is_active": true
-  }
-},
-{
-  "model": "cms.contentblock",
-  "pk": 4,
-  "fields": {
-    "created_at": "2026-05-22T16:49:12.771Z",
-    "updated_at": "2026-05-22T16:49:12.771Z",
-    "page": 1,
-    "heading": "Android - Driver",
-    "eyebrow": "",
-    "body": "<p>Download the SaberTech Driver app from Google Play.</p>",
-    "link_label": "Android - Driver",
-    "link_url": "https://play.google.com/store/apps/details?id=com.sabertech.driver",
-    "image": "",
-    "sort_order": 30,
-    "is_active": true
-  }
-},
-{
-  "model": "cms.contentblock",
-  "pk": 5,
-  "fields": {
-    "created_at": "2026-05-22T16:49:12.775Z",
-    "updated_at": "2026-05-22T16:49:12.775Z",
-    "page": 1,
-    "heading": "From Pickup to Perfect Delivery",
-    "eyebrow": "",
-    "body": "<p>Place your order, get a driver assigned, track in real time, and confirm successful delivery.</p>",
-    "link_label": "",
-    "link_url": "",
-    "image": "",
-    "sort_order": 40,
-    "is_active": true
-  }
-},
-{
-  "model": "cms.contentblock",
-  "pk": 6,
-  "fields": {
-    "created_at": "2026-05-22T16:49:12.779Z",
-    "updated_at": "2026-05-22T16:49:12.779Z",
-    "page": 1,
-    "heading": "Delivery With Complete Accountability",
-    "eyebrow": "",
-    "body": "<p>Our platform coordinates drivers, pickups, and drop-offs, simplifying delivery operations for businesses across multiple markets.</p>",
-    "link_label": "Launch Customer Order Portal",
-    "link_url": "https://sabertech-php-api.24aupl12h4kp.us-south.codeengine.appdomain.cloud/customer-pwa/",
-    "image": "",
-    "sort_order": 50,
-    "is_active": true
-  }
-},
-{
-  "model": "cms.contentblock",
-  "pk": 7,
-  "fields": {
-    "created_at": "2026-05-22T16:49:12.784Z",
-    "updated_at": "2026-05-22T16:49:12.784Z",
-    "page": 1,
-    "heading": "Every Package, Perfectly Managed",
-    "eyebrow": "",
-    "body": "<p>Business delivery, consumer shipments, e-commerce support, multi-market coverage, real-time tracking, professional drivers, transparent operations, and platform-powered efficiency.</p>",
-    "link_label": "Read More About ATMP-Courier",
-    "link_url": "/atmp-courier/",
-    "image": "",
-    "sort_order": 60,
-    "is_active": true
-  }
-},
-{
-  "model": "cms.contentblock",
-  "pk": 8,
-  "fields": {
-    "created_at": "2026-05-22T16:49:12.787Z",
-    "updated_at": "2026-05-22T16:49:12.787Z",
-    "page": 1,
-    "heading": "Driver Access",
-    "eyebrow": "",
-    "body": "<p>Sign up or log in to the ATMP-Courier driver platform for seamless, efficient dispatch management.</p>",
-    "link_label": "Driver Sign Up",
-    "link_url": "https://sabertech-php-api.24aupl12h4kp.us-south.codeengine.appdomain.cloud/driver-signup/",
-    "image": "",
-    "sort_order": 70,
-    "is_active": true
-  }
-},
-{
-  "model": "cms.contentblock",
-  "pk": 22,
-  "fields": {
-    "created_at": "2026-05-22T17:38:39.418Z",
-    "updated_at": "2026-05-22T17:38:39.418Z",
-    "page": 2,
-    "heading": "Welcome",
-    "eyebrow": "",
-    "body": "",
-    "link_label": "",
-    "link_url": "",
-    "image": "",
-    "sort_order": 0,
-    "is_active": true
-  }
-},
-{
-  "model": "cms.contentblock",
-  "pk": 23,
-  "fields": {
-    "created_at": "2026-05-22T17:38:39.429Z",
-    "updated_at": "2026-05-22T17:38:39.429Z",
-    "page": 2,
-    "heading": "Overview",
-    "eyebrow": "",
-    "body": "",
-    "link_label": "",
-    "link_url": "",
-    "image": "",
-    "sort_order": 10,
-    "is_active": true
-  }
-},
-{
-  "model": "cms.contentblock",
-  "pk": 24,
-  "fields": {
-    "created_at": "2026-05-22T17:38:39.438Z",
-    "updated_at": "2026-05-22T17:38:39.438Z",
-    "page": 2,
-    "heading": "Driver Sign Up",
-    "eyebrow": "",
-    "body": "",
-    "link_label": "",
-    "link_url": "",
-    "image": "",
-    "sort_order": 20,
-    "is_active": true
-  }
-},
-{
-  "model": "cms.contentblock",
-  "pk": 25,
-  "fields": {
-    "created_at": "2026-05-22T17:38:39.448Z",
-    "updated_at": "2026-05-22T17:38:39.448Z",
-    "page": 2,
-    "heading": "Verification & Documents",
-    "eyebrow": "",
-    "body": "",
-    "link_label": "",
-    "link_url": "",
-    "image": "",
-    "sort_order": 30,
-    "is_active": true
-  }
-},
-{
-  "model": "cms.contentblock",
-  "pk": 26,
-  "fields": {
-    "created_at": "2026-05-22T17:38:39.457Z",
-    "updated_at": "2026-05-22T17:38:39.457Z",
-    "page": 2,
-    "heading": "Dispatch Rules",
-    "eyebrow": "",
-    "body": "",
-    "link_label": "",
-    "link_url": "",
-    "image": "",
-    "sort_order": 40,
-    "is_active": true
-  }
-},
-{
-  "model": "cms.contentblock",
-  "pk": 27,
-  "fields": {
-    "created_at": "2026-05-22T17:38:39.466Z",
-    "updated_at": "2026-05-22T17:38:39.466Z",
-    "page": 2,
-    "heading": "Driver App (PWA)",
-    "eyebrow": "",
-    "body": "",
-    "link_label": "",
-    "link_url": "",
-    "image": "",
-    "sort_order": 50,
-    "is_active": true
-  }
-},
-{
-  "model": "cms.contentblock",
-  "pk": 28,
-  "fields": {
-    "created_at": "2026-05-22T17:38:39.475Z",
-    "updated_at": "2026-05-22T17:38:39.475Z",
-    "page": 2,
-    "heading": "Earnings & Protections",
-    "eyebrow": "",
-    "body": "",
-    "link_label": "",
-    "link_url": "",
-    "image": "",
-    "sort_order": 60,
-    "is_active": true
-  }
-},
-{
-  "model": "cms.contentblock",
-  "pk": 29,
-  "fields": {
-    "created_at": "2026-05-22T17:38:39.480Z",
-    "updated_at": "2026-05-22T17:38:39.480Z",
-    "page": 2,
-    "heading": "Support",
-    "eyebrow": "",
-    "body": "",
-    "link_label": "",
-    "link_url": "",
-    "image": "",
-    "sort_order": 70,
-    "is_active": true
-  }
-},
-{
-  "model": "cms.navigationlink",
-  "pk": 1,
-  "fields": {
-    "created_at": "2026-05-22T16:49:12.847Z",
-    "updated_at": "2026-05-22T16:49:12.847Z",
-    "label": "Home",
-    "url": "/",
-    "location": "header",
-    "sort_order": 0,
-    "open_in_new_tab": false,
-    "is_active": true
-  }
-},
-{
-  "model": "cms.navigationlink",
-  "pk": 2,
-  "fields": {
-    "created_at": "2026-05-22T16:49:12.850Z",
-    "updated_at": "2026-05-22T16:49:12.850Z",
-    "label": "ATMP Courier",
-    "url": "/atmp-courier/",
-    "location": "header",
-    "sort_order": 10,
-    "open_in_new_tab": false,
-    "is_active": true
-  }
-},
-{
-  "model": "cms.navigationlink",
-  "pk": 3,
-  "fields": {
-    "created_at": "2026-05-22T16:49:12.854Z",
-    "updated_at": "2026-05-22T16:49:12.854Z",
-    "label": "ATMP-Core",
-    "url": "/atmp-core/",
-    "location": "header",
-    "sort_order": 20,
-    "open_in_new_tab": false,
-    "is_active": true
-  }
-},
-{
-  "model": "cms.navigationlink",
-  "pk": 4,
-  "fields": {
-    "created_at": "2026-05-22T16:49:12.858Z",
-    "updated_at": "2026-05-22T16:49:12.858Z",
-    "label": "Customer Order",
-    "url": "/customer-order/",
-    "location": "header",
-    "sort_order": 30,
-    "open_in_new_tab": false,
-    "is_active": true
-  }
-},
-{
-  "model": "cms.navigationlink",
-  "pk": 5,
-  "fields": {
-    "created_at": "2026-05-22T16:49:12.862Z",
-    "updated_at": "2026-05-22T16:49:12.862Z",
-    "label": "Driver Access",
-    "url": "/driver-access/",
-    "location": "header",
-    "sort_order": 40,
-    "open_in_new_tab": false,
-    "is_active": true
-  }
-},
-{
-  "model": "cms.navigationlink",
-  "pk": 6,
-  "fields": {
-    "created_at": "2026-05-22T16:49:12.865Z",
-    "updated_at": "2026-05-22T16:49:12.865Z",
-    "label": "Leadership",
-    "url": "/leadership/",
-    "location": "header",
-    "sort_order": 50,
-    "open_in_new_tab": false,
-    "is_active": true
-  }
-},
-{
-  "model": "cms.navigationlink",
-  "pk": 7,
-  "fields": {
-    "created_at": "2026-05-22T16:49:12.869Z",
-    "updated_at": "2026-05-22T16:49:12.869Z",
-    "label": "Press",
-    "url": "/press/",
-    "location": "header",
-    "sort_order": 60,
-    "open_in_new_tab": false,
-    "is_active": true
-  }
-},
-{
-  "model": "cms.navigationlink",
-  "pk": 8,
-  "fields": {
-    "created_at": "2026-05-22T16:49:12.872Z",
-    "updated_at": "2026-05-22T16:49:12.872Z",
-    "label": "Contact Us",
-    "url": "/contact-us/",
-    "location": "header",
-    "sort_order": 70,
-    "open_in_new_tab": false,
-    "is_active": true
-  }
-},
-{
-  "model": "cms.navigationlink",
-  "pk": 9,
-  "fields": {
-    "created_at": "2026-05-22T16:49:12.877Z",
-    "updated_at": "2026-05-22T16:49:12.877Z",
-    "label": "ATMP Courier",
-    "url": "/atmp-courier/",
-    "location": "footer_quick",
-    "sort_order": 10,
-    "open_in_new_tab": false,
-    "is_active": true
-  }
-},
-{
-  "model": "cms.navigationlink",
-  "pk": 10,
-  "fields": {
-    "created_at": "2026-05-22T16:49:12.880Z",
-    "updated_at": "2026-05-22T16:49:12.880Z",
-    "label": "ATMP-Core",
-    "url": "/atmp-core/",
-    "location": "footer_quick",
-    "sort_order": 20,
-    "open_in_new_tab": false,
-    "is_active": true
-  }
-},
-{
-  "model": "cms.navigationlink",
-  "pk": 11,
-  "fields": {
-    "created_at": "2026-05-22T16:49:12.884Z",
-    "updated_at": "2026-05-22T16:49:12.884Z",
-    "label": "Customer Order",
-    "url": "/customer-order/",
-    "location": "footer_quick",
-    "sort_order": 30,
-    "open_in_new_tab": false,
-    "is_active": true
-  }
-},
-{
-  "model": "cms.navigationlink",
-  "pk": 12,
-  "fields": {
-    "created_at": "2026-05-22T16:49:12.888Z",
-    "updated_at": "2026-05-22T16:49:12.888Z",
-    "label": "Driver Access",
-    "url": "/driver-access/",
-    "location": "footer_quick",
-    "sort_order": 40,
-    "open_in_new_tab": false,
-    "is_active": true
-  }
-},
-{
-  "model": "cms.navigationlink",
-  "pk": 13,
-  "fields": {
-    "created_at": "2026-05-22T16:49:12.891Z",
-    "updated_at": "2026-05-22T16:49:12.891Z",
-    "label": "Leadership",
-    "url": "/leadership/",
-    "location": "footer_quick",
-    "sort_order": 50,
-    "open_in_new_tab": false,
-    "is_active": true
-  }
-},
-{
-  "model": "cms.navigationlink",
-  "pk": 14,
-  "fields": {
-    "created_at": "2026-05-22T16:49:12.894Z",
-    "updated_at": "2026-05-22T16:49:12.894Z",
-    "label": "Press",
-    "url": "/press/",
-    "location": "footer_quick",
-    "sort_order": 60,
-    "open_in_new_tab": false,
-    "is_active": true
-  }
-},
-{
-  "model": "cms.navigationlink",
-  "pk": 15,
-  "fields": {
-    "created_at": "2026-05-22T16:49:12.899Z",
-    "updated_at": "2026-05-22T16:49:12.899Z",
-    "label": "Contact",
-    "url": "/contact-us/",
-    "location": "footer_quick",
-    "sort_order": 70,
-    "open_in_new_tab": false,
-    "is_active": true
-  }
-},
-{
-  "model": "cms.navigationlink",
-  "pk": 16,
-  "fields": {
-    "created_at": "2026-05-22T16:49:12.902Z",
-    "updated_at": "2026-05-22T16:49:12.902Z",
-    "label": "About",
-    "url": "/about/",
-    "location": "footer_support",
-    "sort_order": 80,
-    "open_in_new_tab": false,
-    "is_active": true
-  }
-},
-{
-  "model": "cms.navigationlink",
-  "pk": 19,
-  "fields": {
-    "created_at": "2026-05-22T16:49:12.913Z",
-    "updated_at": "2026-05-22T16:49:12.913Z",
-    "label": "Customer Order Portal",
-    "url": "https://sabertech-php-api.24aupl12h4kp.us-south.codeengine.appdomain.cloud/customer-pwa/",
-    "location": "footer_support",
-    "sort_order": 200,
-    "open_in_new_tab": true,
-    "is_active": true
-  }
-},
-{
-  "model": "cms.navigationlink",
-  "pk": 20,
-  "fields": {
-    "created_at": "2026-05-22T16:49:12.917Z",
-    "updated_at": "2026-05-22T16:49:12.917Z",
-    "label": "Driver App",
-    "url": "https://sabertech-php-api.24aupl12h4kp.us-south.codeengine.appdomain.cloud/driver-pwa/",
-    "location": "footer_support",
-    "sort_order": 201,
-    "open_in_new_tab": true,
-    "is_active": true
-  }
-},
-{
-  "model": "cms.teammember",
-  "pk": 1,
-  "fields": {
-    "created_at": "2026-05-22T16:49:12.924Z",
-    "updated_at": "2026-05-22T16:49:12.924Z",
-    "name": "Megan Patrick",
-    "title": "Chief Executive Officer",
-    "email": "mpatrick@sabertechlogistics.com",
-    "phone": "(907) 250-8765",
-    "bio": "",
-    "photo": "team/ceo-1.jpg",
-    "sort_order": 0,
-    "is_featured": true,
-    "is_active": true
-  }
-},
-{
-  "model": "cms.teammember",
-  "pk": 2,
-  "fields": {
-    "created_at": "2026-05-22T16:49:12.927Z",
-    "updated_at": "2026-05-22T16:49:12.927Z",
-    "name": "Sharon Culpepper",
-    "title": "Chief Personnel Officer",
-    "email": "sculpepper@sabertechlogistics.com",
-    "phone": "",
-    "bio": "",
-    "photo": "team/cpo-1.jpg",
-    "sort_order": 10,
-    "is_featured": false,
-    "is_active": true
-  }
-},
-{
-  "model": "cms.teammember",
-  "pk": 3,
-  "fields": {
-    "created_at": "2026-05-22T16:49:12.931Z",
-    "updated_at": "2026-05-22T16:49:12.931Z",
-    "name": "Val Olson",
-    "title": "Chief Public Relations Officer",
-    "email": "volson@sabertechlogistics.com",
-    "phone": "",
-    "bio": "",
-    "photo": "team/cpro-1.jpg",
-    "sort_order": 20,
-    "is_featured": false,
-    "is_active": true
-  }
-},
-{
-  "model": "cms.teammember",
-  "pk": 4,
-  "fields": {
-    "created_at": "2026-05-22T16:49:12.934Z",
-    "updated_at": "2026-05-22T16:49:12.934Z",
-    "name": "Cory Rankin",
-    "title": "Chief Operating Officer",
-    "email": "crankin@sabertechlogistics.com",
-    "phone": "",
-    "bio": "",
-    "photo": "team/coo-1.jpg",
-    "sort_order": 30,
-    "is_featured": true,
-    "is_active": true
-  }
-},
-{
-  "model": "cms.teammember",
-  "pk": 5,
-  "fields": {
-    "created_at": "2026-05-22T16:49:12.938Z",
-    "updated_at": "2026-05-22T16:49:12.938Z",
-    "name": "Jennifer Rynearson",
-    "title": "Chief Logistics Officer",
-    "email": "jrynearson@sabertechlogistics.com",
-    "phone": "",
-    "bio": "",
-    "photo": "team/clo-1.jpg",
-    "sort_order": 40,
-    "is_featured": false,
-    "is_active": true
-  }
-},
-{
-  "model": "cms.teammember",
-  "pk": 6,
-  "fields": {
-    "created_at": "2026-05-22T16:49:12.941Z",
-    "updated_at": "2026-05-22T16:49:12.941Z",
-    "name": "Christine Alva Armas",
-    "title": "Chief Vision Officer",
-    "email": "carmas@sabertechlogistics.com",
-    "phone": "",
-    "bio": "",
-    "photo": "team/cvo-1.jpg",
-    "sort_order": 50,
-    "is_featured": false,
-    "is_active": true
-  }
-},
-{
-  "model": "cms.teammember",
-  "pk": 7,
-  "fields": {
-    "created_at": "2026-05-22T16:49:12.945Z",
-    "updated_at": "2026-05-22T16:49:12.945Z",
-    "name": "Hamza Bhatti",
-    "title": "Chief Technology Officer",
-    "email": "",
-    "phone": "",
-    "bio": "",
-    "photo": "team/cto-1.jpg",
-    "sort_order": 60,
-    "is_featured": true,
-    "is_active": true
-  }
-},
-{
-  "model": "cms.teammember",
-  "pk": 8,
-  "fields": {
-    "created_at": "2026-05-22T16:49:12.949Z",
-    "updated_at": "2026-05-22T16:49:12.949Z",
-    "name": "Afnan Ahmed Bhutto",
-    "title": "Chief Marketing Officer",
-    "email": "",
-    "phone": "",
-    "bio": "",
-    "photo": "team/cmo-1.jpg",
-    "sort_order": 70,
-    "is_featured": false,
-    "is_active": true
-  }
-},
-{
-  "model": "cms.teammember",
-  "pk": 9,
-  "fields": {
-    "created_at": "2026-05-22T16:49:12.952Z",
-    "updated_at": "2026-05-22T16:49:12.952Z",
-    "name": "Ian Carter",
-    "title": "Chief Communications Officer",
-    "email": "icarter@sabertechlogistics.com",
-    "phone": "",
-    "bio": "",
-    "photo": "team/cco-1.jpg",
-    "sort_order": 80,
-    "is_featured": false,
-    "is_active": true
-  }
-},
-{
-  "model": "cms.teammember",
-  "pk": 10,
-  "fields": {
-    "created_at": "2026-05-22T17:06:53.369Z",
-    "updated_at": "2026-05-22T17:06:53.369Z",
-    "name": "Anli Goldsmith",
-    "title": "Chief Science Officer",
-    "email": "cagoldsmith@sabertechlogistics.com",
-    "phone": "",
-    "bio": "",
-    "photo": "",
-    "sort_order": 90,
-    "is_featured": false,
-    "is_active": true
-  }
-}
 ]
