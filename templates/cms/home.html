@@ -1,0 +1,109 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="wp-hero">
+    <div class="hero-inner">
+        <a class="tiny-pill" href="/atmp-courier/">Begin the Experience</a>
+        {% if page.eyebrow %}<p class="hero-kicker">{{ page.eyebrow }}</p>{% endif %}
+        <h1>{{ page.title }}</h1>
+        {% if page.subtitle %}<p class="hero-subtitle">{{ page.subtitle }}</p>{% endif %}
+        <div class="hero-actions">
+            <a class="pill-button" href="/atmp-courier/">Get Started</a>
+            <a class="pill-button pill-filled" href="/atmp-core/">Learn More</a>
+        </div>
+        <div class="app-buttons">
+            <a href="https://apps.apple.com/gb/app/sabertech-driver/id6759118586" target="_blank" rel="noopener">iOS - Driver</a>
+            <a href="https://apps.apple.com/gb/app/sabertech-customer/id6759689343" target="_blank" rel="noopener">iOS - Customer</a>
+            <a href="https://play.google.com/store/apps/details?id=com.sabertech.driver" target="_blank" rel="noopener">Android - Driver</a>
+            <a href="https://play.google.com/store/apps/details?id=com.sabertech.customer&hl=ln" target="_blank" rel="noopener">Android - Customer</a>
+        </div>
+    </div>
+    <a class="translate-chip" href="#">Translate &raquo;</a>
+</section>
+
+<section class="process-section">
+    <h2>From Pickup to Perfect Delivery</h2>
+    <div class="process-grid">
+        <article>
+            <span>01</span>
+            <h3>Real-Time Tracking</h3>
+            <p>Monitor your delivery from pickup to drop-off with complete visibility.</p>
+        </article>
+        <article>
+            <span>02</span>
+            <h3>Confirmed Successful Delivery</h3>
+            <p>Receive proof of delivery and peace of mind, every single time.</p>
+        </article>
+        <article>
+            <span>03</span>
+            <h3>Place Your Order</h3>
+            <p>Submit delivery details quickly through our platform for seamless scheduling.</p>
+        </article>
+        <article>
+            <span>04</span>
+            <h3>Driver Assigned Instantly</h3>
+            <p>Our system efficiently matches the right driver to your package.</p>
+        </article>
+    </div>
+</section>
+
+<section class="dark-callout customer-callout">
+    <p class="section-kicker">Customer</p>
+    <h2>Delivery With Complete Accountability</h2>
+    <p>Our platform coordinates drivers, pickups, and drop-offs, simplifying delivery operations for businesses across multiple markets.</p>
+    <a class="pill-button" href="https://sabertech-php-api.24aupl12h4kp.us-south.codeengine.appdomain.cloud/customer-pwa/" target="_blank" rel="noopener">Launch Customer Order Portal</a>
+    <p class="small-copy">We streamline every stage of your delivery process by connecting shipments with qualified drivers, optimizing routes, and ensuring smooth operations for businesses in growing markets.</p>
+</section>
+
+<section class="story-band">
+    <h2>Saber Tech empowers businesses with disciplined execution, seamless delivery, and operational precision.</h2>
+    <p>At Saber Tech, we redefine last-mile delivery by combining smart technology with disciplined, operator-led execution. Every shipment is carefully coordinated, connecting drivers, routes, and packages seamlessly, so businesses can scale without operational headaches. Our transparent approach ensures every handoff, pickup, and drop-off is meticulously managed, providing complete visibility and control.</p>
+    <p>From multi-location retailers to fast-growing e-commerce brands, Saber Tech empowers companies to deliver efficiently, confidently, and consistently, turning complex logistics into a simple, reliable, and professional experience.</p>
+    <a class="pill-button" href="/about/">Read More</a>
+</section>
+
+<section class="services-band">
+    <h2>Every Package, Perfectly Managed</h2>
+    <p class="services-intro">Our comprehensive services cover every stage of delivery, seamlessly connecting drivers, routes, and shipments. Businesses and individuals alike benefit from smart, reliable, and professionally managed solutions.</p>
+    <div class="services-grid">
+        <article><span>1</span><h3>1. Business Delivery</h3><p>Flexible last-mile solutions for small and mid-sized businesses, ensuring reliable pickups, on-time drop-offs, and complete operational visibility.</p></article>
+        <article><span>2</span><h3>2. Consumer Shipments</h3><p>Efficient delivery for individuals, handling items carefully with real-time tracking and transparent handoffs for total peace of mind.</p></article>
+        <article><span>3</span><h3>3. E-commerce Support</h3><p>Streamlined delivery for online retailers, optimizing routes and coordination to ensure customers receive orders quickly and accurately.</p></article>
+        <article><span>4</span><h3>4. Multi-Market Coverage</h3><p>Seamlessly expand delivery operations across cities and regions, scaling without operational complexity or logistical headaches.</p></article>
+        <article><span>5</span><h3>5. Real-Time Tracking</h3><p>Monitor every shipment's journey, from pickup to delivery, with complete transparency and instant updates at every stage.</p></article>
+        <article><span>6</span><h3>6. Professional Drivers</h3><p>Certified, trained drivers handle every package responsibly, ensuring safe, timely, and professional deliveries across all locations.</p></article>
+        <article><span>7</span><h3>7. Transparent Operations</h3><p>Clear pricing, documented handoffs, and fair contractor rules guarantee smooth delivery management without hidden surprises.</p></article>
+        <article><span>8</span><h3>8. Platform-Powered Efficiency</h3><p>Our proprietary system intelligently coordinates drivers, orders, and routes, reducing errors and improving speed, accuracy, and customer satisfaction.</p></article>
+        <article class="service-link"><a href="/atmp-courier/">Read More ABout All ATMP-Courier</a></article>
+    </div>
+</section>
+
+<section class="dark-callout driver-callout">
+    <p class="section-kicker">Driver</p>
+    <h2>Driver Access</h2>
+    <p>Sign up or log in to the ATMP-Courier driver platform for seamless, efficient dispatch management.</p>
+    <div class="hero-actions">
+        <a class="pill-button" href="https://sabertech-php-api.24aupl12h4kp.us-south.codeengine.appdomain.cloud/driver-signup/" target="_blank" rel="noopener">Driver Sign Up</a>
+        <a class="pill-button pill-filled" href="https://sabertech-php-api.24aupl12h4kp.us-south.codeengine.appdomain.cloud/driver-pwa/" target="_blank" rel="noopener">Driver Sign In</a>
+    </div>
+    <p class="small-copy">Drivers use the platform via a Progressive Web App that enables real-time dispatch. With enforced acceptance windows and instant notifications, drivers can maximize productivity, reduce idle time, and ensure predictable, reliable operations.</p>
+</section>
+
+{% if featured_team %}
+<section class="leadership-section">
+    <h2>Expert Leaders, Shaping Smarter Delivery Solutions</h2>
+    <div class="team-grid">
+        {% for member in featured_team %}
+            <article class="team-card">
+                {% if member.photo %}<img src="{{ member.photo.url }}" alt="{{ member.name }}">{% endif %}
+                <h3>{{ member.name }}</h3>
+                <p>{{ member.title }}</p>
+                {% if member.phone %}<p>{{ member.phone }}</p>{% endif %}
+                {% if member.email %}<a href="mailto:{{ member.email }}">{{ member.email }}</a>{% endif %}
+            </article>
+        {% endfor %}
+    </div>
+    <a class="pill-button leadership-more" href="/leadership/">View More</a>
+</section>
+{% endif %}
+{% endblock %}

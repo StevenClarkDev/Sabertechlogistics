@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.py[cod]
+db.sqlite3
+staticfiles/
+.env
+.DS_Store
+node_modules/
+*.log
+migration/screenshots/
+migration/assets/

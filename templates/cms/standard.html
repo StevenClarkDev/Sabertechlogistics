@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="page-hero">
+    {% if page.eyebrow %}<p class="eyebrow">{{ page.eyebrow }}</p>{% endif %}
+    <h1>{{ page.title }}</h1>
+    {% if page.subtitle %}<p class="lead">{{ page.subtitle }}</p>{% endif %}
+</section>
+
+<section class="content-section standard-content">
+    {% if page.body %}<div class="rich-text">{{ page.body|safe }}</div>{% endif %}
+    {% if blocks %}
+    <div class="accordion-list">
+        {% for block in blocks %}
+            <details {% if forloop.first %}open{% endif %}>
+                <summary>{{ block.heading }} <span>{% if forloop.first %}&darr;{% else %}&rarr;{% endif %}</span></summary>
+                {% if block.body %}<div class="rich-text">{{ block.body|safe }}</div>{% endif %}
+                {% if block.link_url %}<a class="text-link" href="{{ block.link_url }}">{{ block.link_label|default:"Read More" }}</a>{% endif %}
+            </details>
+        {% endfor %}
+    </div>
+    {% endif %}
+</section>
+{% endblock %}

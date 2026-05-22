@@ -1,0 +1,79 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.seo_title %}{{ page.seo_title }}{% elif page.title %}{{ page.title }} - {% endif %}{{ site_settings.site_name|default:"Saber Tech Logistics" }}</title>
+    {% if page.seo_description %}<meta name="description" content="{{ page.seo_description }}">{% endif %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inder&family=Jost:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&family=Roboto+Slab:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/site.css' %}">
+    {% if site_settings.favicon %}<link rel="icon" href="{{ site_settings.favicon.url }}">{% else %}<link rel="icon" href="{% static 'images/cropped-SaberTech-Logistics-logo-design-final-file-01-scaled-2-32x32.png' %}">{% endif %}
+    {{ site_settings.analytics_head_code|safe }}
+</head>
+<body class="template-{{ page.template|default:'standard' }}">
+{{ site_settings.analytics_body_code|safe }}
+<header class="site-header">
+    <a class="brand" href="{% url 'cms:home' %}" aria-label="Saber Tech Logistics home">
+        {% if site_settings.logo %}
+            <img src="{{ site_settings.logo.url }}" alt="{{ site_settings.site_name }}">
+        {% else %}
+            <img src="{% static 'images/cropped-SaberTech-Logistics-logo-design-final-file-01-scaled-1.png' %}" alt="Saber Tech Logistics">
+        {% endif %}
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="site-nav" id="site-nav">
+        {% for link in header_links %}
+            <a href="{{ link.url }}" {% if link.open_in_new_tab %}target="_blank" rel="noopener"{% endif %}>{{ link.label }}</a>
+        {% endfor %}
+    </nav>
+</header>
+
+<main>
+    {% if messages %}
+        <div class="messages">
+            {% for message in messages %}
+                <p class="message message-{{ message.tags }}">{{ message }}</p>
+            {% endfor %}
+        </div>
+    {% endif %}
+    {% block content %}{% endblock %}
+</main>
+
+<footer class="site-footer">
+    <div class="footer-brand">
+        <img src="{% static 'images/cropped-SaberTech-Logistics-logo-design-final-file-01-scaled-1.png' %}" alt="Saber Tech Logistics">
+        <h2>{{ site_settings.tagline|default:"Trusted Solutions, Every Mile" }}</h2>
+        <p>Trust Saber Tech to handle every delivery with expertise and operational excellence.</p>
+        <div class="social-links">
+            {% if site_settings.facebook_url %}<a href="{{ site_settings.facebook_url }}" target="_blank" rel="noopener" aria-label="Facebook">f</a>{% endif %}
+            {% if site_settings.instagram_url %}<a href="{{ site_settings.instagram_url }}" target="_blank" rel="noopener" aria-label="Instagram">◎</a>{% endif %}
+        </div>
+    </div>
+    <div>
+        <h3>Quick Links</h3>
+        {% for link in footer_quick_links %}
+            <a href="{{ link.url }}" {% if link.open_in_new_tab %}target="_blank" rel="noopener"{% endif %}>{{ link.label }}</a>
+        {% endfor %}
+    </div>
+    <div>
+        <h3>Support</h3>
+        {% for link in footer_support_links %}
+            <a href="{{ link.url }}" {% if link.open_in_new_tab %}target="_blank" rel="noopener"{% endif %}>{{ link.label }}</a>
+        {% endfor %}
+    </div>
+    <div class="footer-bottom">
+        <p>{{ site_settings.footer_text|default:"Saber Tech © 2026 • Built on ATMP-core • Owner and operator centric logistics platform." }}</p>
+        <nav class="legal-links" aria-label="Legal links">
+            <a href="/privacy-policy/">Privacy Policy</a>
+            <span>|</span>
+            <a href="/term-and-conditions/">Terms &amp; Conditions</a>
+        </nav>
+    </div>
+</footer>
+<button class="scroll-top" type="button" aria-label="Scroll to top">^</button>
+<script src="{% static 'js/site.js' %}"></script>
+</body>
+</html>
