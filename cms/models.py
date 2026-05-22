@@ -24,8 +24,21 @@ class SiteSetting(TimeStampedModel):
     instagram_url = models.URLField(blank=True)
     logo = models.ImageField(upload_to='site/', blank=True)
     favicon = models.ImageField(upload_to='site/', blank=True)
-    analytics_head_code = models.TextField(blank=True)
-    analytics_body_code = models.TextField(blank=True)
+    analytics_head_code = models.TextField(
+        blank=True,
+        verbose_name='Head scripts',
+        help_text='Paste scripts that must appear before </head>, such as Google Analytics, verification tags, pixels, or CSS snippets.',
+    )
+    analytics_body_code = models.TextField(
+        blank=True,
+        verbose_name='Opening body scripts',
+        help_text='Paste scripts that must appear immediately after <body>, such as the Google Tag Manager noscript iframe.',
+    )
+    third_party_footer_code = models.TextField(
+        blank=True,
+        verbose_name='Before closing body scripts',
+        help_text='Paste live chat widgets, tracking scripts, and other third-party code that should load near the end of the page.',
+    )
 
     class Meta:
         verbose_name = 'Site setting'

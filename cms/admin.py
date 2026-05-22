@@ -65,9 +65,16 @@ class SiteSettingAdmin(admin.ModelAdmin):
     fieldsets = (
         ('Brand', {'fields': ('site_name', 'tagline', 'footer_text', 'logo', 'favicon')}),
         ('Contact and Social', {'fields': ('phone', 'email', 'facebook_url', 'instagram_url')}),
-        ('Tracking Code', {
-            'classes': ('collapse',),
-            'fields': ('analytics_head_code', 'analytics_body_code'),
+        ('Third-party scripts and tracking', {
+            'description': (
+                'Paste Google tags, live chat widgets, pixels, verification tags, '
+                'and other third-party embeds here. Code is rendered exactly as entered.'
+            ),
+            'fields': (
+                'analytics_head_code',
+                'analytics_body_code',
+                'third_party_footer_code',
+            ),
         }),
     )
 
