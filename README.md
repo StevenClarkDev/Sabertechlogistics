@@ -23,7 +23,8 @@ Set these environment variables on the server:
 ```text
 DJANGO_SECRET_KEY=replace-with-a-secure-key
 DJANGO_DEBUG=False
-DJANGO_ALLOWED_HOSTS=sabertechlogistics.com,www.sabertechlogistics.com,your-ibm-hostname
+DJANGO_ALLOWED_HOSTS=sabertechlogistics.com,www.sabertechlogistics.com,.appdomain.cloud
+DJANGO_CSRF_TRUSTED_ORIGINS=https://sabertechlogistics.com,https://www.sabertechlogistics.com,https://*.appdomain.cloud
 ```
 
 Run `python manage.py collectstatic` during deployment.
