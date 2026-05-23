@@ -9,6 +9,10 @@ from .models import (
     TeamMember,
 )
 
+admin.site.site_header = 'Saber Tech CMS'
+admin.site.site_title = 'Saber Tech CMS'
+admin.site.index_title = 'Website administration'
+
 
 class ContentBlockInline(admin.StackedInline):
     model = ContentBlock
