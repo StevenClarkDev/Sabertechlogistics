@@ -9,6 +9,7 @@
     --panel: #001225;
     --panel-soft: #071f3f;
     --gold: #d8a23a;
+    --site-gutter: clamp(20px, 5vw, 72px);
 }
 
 * {
@@ -42,26 +43,30 @@ img {
     align-items: center;
     justify-content: space-between;
     gap: 24px;
-    min-height: 190px;
+    min-height: 104px;
     padding: 34px clamp(36px, 5vw, 64px);
     background: #000915;
     border-bottom: 0;
     color: #fff;
 }
 
+.brand {
+    flex: 0 0 auto;
+}
+
 .brand img {
-    width: min(390px, 50vw);
+    width: min(300px, 44vw);
     height: auto;
 }
 
 .site-nav {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 24px;
     color: #fff;
     font-family: "Jost", Arial, sans-serif;
-    font-size: 17px;
-    font-weight: 800;
+    font-size: 12.5px;
+    font-weight: 700;
 }
 
 .site-nav a {
@@ -1032,24 +1037,6 @@ h3 {
     background: #001326;
 }
 
-.template-home .site-header {
-    min-height: 104px;
-    background: #000915;
-    border-bottom: 0;
-    color: #fff;
-}
-
-.template-home .brand img {
-    width: min(300px, 44vw);
-}
-
-.template-home .site-nav {
-    gap: 24px;
-    color: #fff;
-    font-size: 12.5px;
-    font-weight: 700;
-}
-
 .wp-hero {
     position: relative;
     display: grid;
@@ -1445,16 +1432,15 @@ h3 {
 }
 
 @media (min-width: 1280px) {
-    .template-home .site-header,
     .wp-hero {
-        padding-left: 14px;
-        padding-right: 14px;
+        padding-left: var(--site-gutter);
+        padding-right: var(--site-gutter);
     }
 }
 
 @media (max-width: 1040px) {
-    .template-home .site-nav {
-        color: #15222d;
+    .site-nav {
+        color: #fff;
         font-size: 14px;
     }
 
@@ -1474,7 +1460,7 @@ h3 {
 }
 
 @media (max-width: 680px) {
-    .template-home .brand img {
+    .brand img {
         width: 140px;
     }
 
@@ -1550,4 +1536,70 @@ h3 {
     .template-leadership .team-card:nth-child(7) { order: 8; }
     .template-leadership .team-card:nth-child(8) { order: 9; }
     .template-leadership .team-card:nth-child(9) { order: 10; }
+}
+
+@media (min-width: 1100px) {
+    :root {
+        --site-gutter: 16.666vw;
+    }
+
+    .brand {
+        display: flex;
+        flex-basis: calc(var(--site-gutter) * 2);
+        justify-content: center;
+        margin-left: calc(var(--site-gutter) * -1);
+    }
+
+    .site-nav {
+        justify-content: flex-end;
+    }
+}
+
+/* Central content lane: desktop pages are treated as six columns, with content in columns 2-5. */
+.site-header,
+.site-footer,
+.messages,
+.page-hero,
+.wp-page-hero,
+.wp-hero,
+.content-section,
+.core-layout,
+.systems-section,
+.portal-panels,
+.pwa-section,
+.press-page,
+.about-page,
+.contact-page,
+.process-section,
+.story-band,
+.services-band,
+.leadership-section {
+    padding-left: var(--site-gutter);
+    padding-right: var(--site-gutter);
+}
+
+.dark-callout {
+    margin-left: var(--site-gutter);
+    margin-right: var(--site-gutter);
+}
+
+.hero-inner,
+.wp-page-hero h1,
+.wp-page-hero p,
+.core-top,
+.core-copy-panel,
+.systems-grid,
+.portal-main p,
+.press-page p,
+.press-page h1,
+.standard-content > .rich-text,
+.accordion-list,
+.process-grid,
+.story-band h2,
+.story-band p,
+.services-grid,
+.leadership-section .team-grid,
+.template-leadership .team-grid {
+    max-width: none;
+    width: 100%;
 }
