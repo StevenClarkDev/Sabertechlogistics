@@ -18,6 +18,14 @@
     --delete-button-hover-bg: #902525;
     --font-family-primary: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
     --font-family-monospace: "Cascadia Code", Consolas, Monaco, monospace;
+    --admin-card-bg: #ffffff;
+    --admin-card-fg: #152238;
+    --admin-card-muted: #60758a;
+    --admin-field-bg: #fbfdff;
+    --admin-field-fg: #102136;
+    --admin-field-border: #bdd0e2;
+    --admin-row-alt: #f8fbfe;
+    --admin-table-head-bg: #f4f8fc;
 }
 
 body {
@@ -78,7 +86,7 @@ div.breadcrumbs a {
 
 h1 {
     margin: 0 0 28px;
-    color: #001326;
+    color: var(--admin-card-fg);
     font-size: 32px;
     font-weight: 800;
 }
@@ -98,7 +106,8 @@ fieldset.module,
 .submit-row {
     border: 1px solid rgba(13, 87, 153, 0.14);
     border-radius: 10px;
-    background: #ffffff;
+    background: var(--admin-card-bg);
+    color: var(--admin-card-fg);
     box-shadow: 0 16px 42px rgba(0, 19, 38, 0.08);
     overflow: hidden;
 }
@@ -118,7 +127,7 @@ fieldset.module h2 {
 }
 
 label {
-    color: #132d46;
+    color: var(--admin-card-fg);
     font-size: 15px;
     font-weight: 750;
 }
@@ -130,7 +139,7 @@ div.help,
 form div.help,
 div.help li {
     margin-top: 7px;
-    color: #60758a;
+    color: var(--admin-card-muted);
     font-size: 14px;
     line-height: 1.45;
 }
@@ -145,11 +154,11 @@ textarea,
 select,
 .vTextField {
     min-height: 42px;
-    border: 1px solid #bdd0e2;
+    border: 1px solid var(--admin-field-border);
     border-radius: 7px;
     padding: 10px 12px;
-    background: #fbfdff;
-    color: #102136;
+    background: var(--admin-field-bg);
+    color: var(--admin-field-fg);
     font-size: 16px;
 }
 
@@ -223,7 +232,8 @@ a.button {
 #changelist .actions {
     padding: 18px 20px;
     border-radius: 10px;
-    background: #ffffff;
+    background: var(--admin-card-bg);
+    color: var(--admin-card-fg);
     box-shadow: 0 12px 32px rgba(0, 19, 38, 0.06);
 }
 
@@ -233,8 +243,8 @@ a.button {
 
 table thead th {
     padding: 14px 12px;
-    background: #f4f8fc;
-    color: #102136;
+    background: var(--admin-table-head-bg);
+    color: var(--admin-card-fg);
 }
 
 td,
@@ -244,7 +254,7 @@ th {
 }
 
 tr:nth-child(even) {
-    background: #f8fbfe;
+    background: var(--admin-row-alt);
 }
 
 #changelist-filter {
@@ -258,8 +268,88 @@ tr:nth-child(even) {
 
 #changelist-filter h3 {
     margin: 18px 18px 8px;
-    color: #132d46;
+    color: var(--admin-card-fg);
     font-size: 15px;
+}
+
+html[data-theme="dark"] {
+    --body-fg: #e7f2ff;
+    --body-bg: #001326;
+    --body-quiet-color: #a9bdd2;
+    --hairline-color: #173e66;
+    --border-color: #245174;
+    --link-fg: #8ed0ff;
+    --link-hover-color: #b9e3ff;
+    --admin-card-bg: #061c39;
+    --admin-card-fg: #eaf4ff;
+    --admin-card-muted: #bdd0e2;
+    --admin-field-bg: #001a33;
+    --admin-field-fg: #f3f9ff;
+    --admin-field-border: #2f6f9f;
+    --admin-row-alt: #082957;
+    --admin-table-head-bg: #001f3f;
+}
+
+@media (prefers-color-scheme: dark) {
+    html[data-theme="auto"] {
+        --body-fg: #e7f2ff;
+        --body-bg: #001326;
+        --body-quiet-color: #a9bdd2;
+        --hairline-color: #173e66;
+        --border-color: #245174;
+        --link-fg: #8ed0ff;
+        --link-hover-color: #b9e3ff;
+        --admin-card-bg: #061c39;
+        --admin-card-fg: #eaf4ff;
+        --admin-card-muted: #bdd0e2;
+        --admin-field-bg: #001a33;
+        --admin-field-fg: #f3f9ff;
+        --admin-field-border: #2f6f9f;
+        --admin-row-alt: #082957;
+        --admin-table-head-bg: #001f3f;
+    }
+}
+
+html[data-theme="dark"] .module,
+html[data-theme="dark"] .inline-group,
+html[data-theme="dark"] fieldset.module,
+html[data-theme="dark"] .results,
+html[data-theme="dark"] #changelist-filter,
+html[data-theme="dark"] .submit-row,
+html[data-theme="dark"] #changelist .actions {
+    border-color: rgba(142, 208, 255, 0.22);
+    box-shadow: 0 16px 42px rgba(0, 0, 0, 0.24);
+}
+
+html[data-theme="dark"] .form-row {
+    border-bottom-color: rgba(142, 208, 255, 0.16);
+}
+
+html[data-theme="dark"] input::placeholder,
+html[data-theme="dark"] textarea::placeholder {
+    color: #91a9bf;
+}
+
+@media (prefers-color-scheme: dark) {
+    html[data-theme="auto"] .module,
+    html[data-theme="auto"] .inline-group,
+    html[data-theme="auto"] fieldset.module,
+    html[data-theme="auto"] .results,
+    html[data-theme="auto"] #changelist-filter,
+    html[data-theme="auto"] .submit-row,
+    html[data-theme="auto"] #changelist .actions {
+        border-color: rgba(142, 208, 255, 0.22);
+        box-shadow: 0 16px 42px rgba(0, 0, 0, 0.24);
+    }
+
+    html[data-theme="auto"] .form-row {
+        border-bottom-color: rgba(142, 208, 255, 0.16);
+    }
+
+    html[data-theme="auto"] input::placeholder,
+    html[data-theme="auto"] textarea::placeholder {
+        color: #91a9bf;
+    }
 }
 
 #changelist-filter ul {
