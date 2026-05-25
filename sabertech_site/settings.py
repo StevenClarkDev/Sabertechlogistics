@@ -53,6 +53,7 @@ SECURE_HSTS_PRELOAD = os.environ.get('DJANGO_SECURE_HSTS_PRELOAD', 'False').lowe
 
 INSTALLED_APPS = [
     'cms',
+    'seo',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
