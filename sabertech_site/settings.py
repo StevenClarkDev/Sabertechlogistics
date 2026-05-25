@@ -44,9 +44,32 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 SECURE_SSL_REDIRECT = os.environ.get('DJANGO_SECURE_SSL_REDIRECT', 'False').lower() == 'true'
 SESSION_COOKIE_SECURE = os.environ.get('DJANGO_SESSION_COOKIE_SECURE', str(IS_PRODUCTION)).lower() == 'true'
 CSRF_COOKIE_SECURE = os.environ.get('DJANGO_CSRF_COOKIE_SECURE', str(IS_PRODUCTION)).lower() == 'true'
+SESSION_COOKIE_HTTPONLY = True
+CSRF_COOKIE_HTTPONLY = os.environ.get('DJANGO_CSRF_COOKIE_HTTPONLY', 'False').lower() == 'true'
+SESSION_COOKIE_SAMESITE = 'Lax'
+CSRF_COOKIE_SAMESITE = 'Lax'
 SECURE_HSTS_SECONDS = int(os.environ.get('DJANGO_SECURE_HSTS_SECONDS', '0'))
 SECURE_HSTS_INCLUDE_SUBDOMAINS = os.environ.get('DJANGO_SECURE_HSTS_INCLUDE_SUBDOMAINS', 'False').lower() == 'true'
 SECURE_HSTS_PRELOAD = os.environ.get('DJANGO_SECURE_HSTS_PRELOAD', 'False').lower() == 'true'
+SECURE_REFERRER_POLICY = 'same-origin'
+X_FRAME_OPTIONS = 'DENY'
+DATA_UPLOAD_MAX_MEMORY_SIZE = int(os.environ.get('DJANGO_DATA_UPLOAD_MAX_MEMORY_SIZE', str(1024 * 1024)))
+FILE_UPLOAD_MAX_MEMORY_SIZE = int(os.environ.get('DJANGO_FILE_UPLOAD_MAX_MEMORY_SIZE', str(2 * 1024 * 1024)))
+SECURITY_THROTTLE_ENABLED = os.environ.get('SECURITY_THROTTLE_ENABLED', 'True').lower() == 'true'
+SECURITY_THROTTLE_GENERAL_LIMIT = int(os.environ.get('SECURITY_THROTTLE_GENERAL_LIMIT', '240'))
+SECURITY_THROTTLE_GENERAL_WINDOW = int(os.environ.get('SECURITY_THROTTLE_GENERAL_WINDOW', '60'))
+SECURITY_THROTTLE_POST_LIMIT = int(os.environ.get('SECURITY_THROTTLE_POST_LIMIT', '20'))
+SECURITY_THROTTLE_POST_WINDOW = int(os.environ.get('SECURITY_THROTTLE_POST_WINDOW', '60'))
+SECURITY_THROTTLE_ADMIN_LIMIT = int(os.environ.get('SECURITY_THROTTLE_ADMIN_LIMIT', '30'))
+SECURITY_THROTTLE_ADMIN_WINDOW = int(os.environ.get('SECURITY_THROTTLE_ADMIN_WINDOW', '300'))
+SECURITY_BLOCKED_PATH_PREFIXES = tuple(
+    prefix.strip()
+    for prefix in os.environ.get(
+        'SECURITY_BLOCKED_PATH_PREFIXES',
+        '/.env,/.git,/wp-admin,/wp-login.php,/xmlrpc.php,/phpmyadmin,/adminer.php',
+    ).split(',')
+    if prefix.strip()
+)
 
 
 # Application definition
@@ -65,6 +88,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
+    'sabertech_site.middleware.SecurityThrottleMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',

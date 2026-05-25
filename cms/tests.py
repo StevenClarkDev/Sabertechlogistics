@@ -1,4 +1,5 @@
-from django.test import TestCase
+from django.core.cache import cache
+from django.test import TestCase, override_settings
 from django.urls import reverse
 
 from .models import NavigationLink, Page, SiteSetting
@@ -55,5 +56,44 @@ class PublicPageTests(TestCase):
         Page.objects.create(title='Hidden', slug='hidden', is_published=False)
         response = self.client.get('/hidden/')
         self.assertEqual(response.status_code, 404)
+
+
+class SecurityThrottleTests(TestCase):
+    def setUp(self):
+        cache.clear()
+        SiteSetting.objects.create(site_name='Saber Tech Logistics')
+        Page.objects.create(title='Home', slug='', template='home', is_published=True)
+
+    @override_settings(
+        SECURITY_THROTTLE_ENABLED=True,
+        SECURITY_THROTTLE_GENERAL_LIMIT=2,
+        SECURITY_THROTTLE_GENERAL_WINDOW=60,
+        SECURITY_THROTTLE_POST_LIMIT=20,
+        SECURITY_THROTTLE_ADMIN_LIMIT=30,
+    )
+    def test_general_request_throttle_returns_429(self):
+        self.assertEqual(self.client.get('/').status_code, 200)
+        self.assertEqual(self.client.get('/').status_code, 200)
+        response = self.client.get('/')
+        self.assertEqual(response.status_code, 429)
+        self.assertEqual(response.headers['Retry-After'], '60')
+
+    @override_settings(
+        SECURITY_THROTTLE_ENABLED=True,
+        SECURITY_THROTTLE_GENERAL_LIMIT=100,
+        SECURITY_THROTTLE_POST_LIMIT=1,
+        SECURITY_THROTTLE_POST_WINDOW=60,
+        SECURITY_THROTTLE_ADMIN_LIMIT=30,
+    )
+    def test_write_request_throttle_returns_429(self):
+        response = self.client.post('/contact-us/', {'name': 'A', 'email': 'a@example.com', 'message': 'Hello'})
+        self.assertIn(response.status_code, {302, 404})
+        response = self.client.post('/contact-us/', {'name': 'A', 'email': 'a@example.com', 'message': 'Hello'})
+        self.assertEqual(response.status_code, 429)
+
+    @override_settings(SECURITY_BLOCKED_PATH_PREFIXES=('/wp-login.php', '/.env'))
+    def test_common_bot_probe_is_blocked_before_view_work(self):
+        self.assertEqual(self.client.get('/wp-login.php').status_code, 404)
+        self.assertEqual(self.client.get('/.env').status_code, 404)
 
 # Create your tests here.
