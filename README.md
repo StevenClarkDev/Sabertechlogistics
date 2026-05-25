@@ -1,6 +1,6 @@
 # Saber Tech Logistics
 
-Django 6.0.5 rebuild of the Saber Tech Logistics WordPress website with CMS-managed pages, navigation, team members, site settings, and contact submissions through Django Admin.
+Django 6.0.5 rebuild of the Saber Tech Logistics website with CMS-managed pages, navigation, team members, site settings, and contact submissions through Django Admin.
 
 ## Local Setup
 

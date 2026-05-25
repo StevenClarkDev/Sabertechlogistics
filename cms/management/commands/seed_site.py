@@ -167,7 +167,7 @@ TEAM = [
 
 
 class Command(BaseCommand):
-    help = 'Seed editable CMS content from the initial WordPress migration audit.'
+    help = 'Seed editable CMS content from the initial site content audit.'
 
     def handle(self, *args, **options):
         SiteSetting.objects.update_or_create(

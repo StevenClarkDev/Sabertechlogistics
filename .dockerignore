@@ -6,6 +6,4 @@ db.sqlite3
 staticfiles
 node_modules
 *.log
-migration/screenshots
-migration/assets
 .env

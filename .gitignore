@@ -7,5 +7,3 @@ staticfiles/
 .DS_Store
 node_modules/
 *.log
-migration/screenshots/
-migration/assets/

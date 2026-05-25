@@ -91,9 +91,9 @@ class SecurityThrottleTests(TestCase):
         response = self.client.post('/contact-us/', {'name': 'A', 'email': 'a@example.com', 'message': 'Hello'})
         self.assertEqual(response.status_code, 429)
 
-    @override_settings(SECURITY_BLOCKED_PATH_PREFIXES=('/wp-login.php', '/.env'))
+    @override_settings(SECURITY_BLOCKED_PATH_PREFIXES=('/phpmyadmin', '/.env'))
     def test_common_bot_probe_is_blocked_before_view_work(self):
-        self.assertEqual(self.client.get('/wp-login.php').status_code, 404)
+        self.assertEqual(self.client.get('/phpmyadmin').status_code, 404)
         self.assertEqual(self.client.get('/.env').status_code, 404)
 
 # Create your tests here.

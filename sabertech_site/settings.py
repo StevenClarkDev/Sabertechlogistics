@@ -66,7 +66,7 @@ SECURITY_BLOCKED_PATH_PREFIXES = tuple(
     prefix.strip()
     for prefix in os.environ.get(
         'SECURITY_BLOCKED_PATH_PREFIXES',
-        '/.env,/.git,/wp-admin,/wp-login.php,/xmlrpc.php,/phpmyadmin,/adminer.php',
+        '/.env,/.git,/phpmyadmin,/adminer.php',
     ).split(',')
     if prefix.strip()
 )
