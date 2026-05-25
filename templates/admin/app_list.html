@@ -1,0 +1,48 @@
+{% load i18n %}
+
+{% if app_list %}
+  <div class="admin-app-grid">
+  {% for app in app_list %}
+    <section class="app-{{ app.app_label }} module admin-app-card{% if app.app_url in request.path|urlencode %} current-app{% endif %}">
+      <header class="admin-app-card-header">
+        <span class="admin-app-mark" aria-hidden="true">{{ app.name|slice:":1" }}</span>
+        <div>
+          <h3>
+            <a href="{{ app.app_url }}" class="section" title="{% blocktranslate with name=app.name %}Models in the {{ name }} application{% endblocktranslate %}">{{ app.name }}</a>
+          </h3>
+          <p>{{ app.models|length }} workspace{{ app.models|length|pluralize }}</p>
+        </div>
+      </header>
+      <div class="admin-model-list">
+        {% for model in app.models %}
+          {% with model_name=model.object_name|lower %}
+            <div class="admin-model-row model-{{ model_name }}{% if model.admin_url in request.path|urlencode %} current-model{% endif %}">
+              <div class="admin-model-name" id="{{ app.app_label }}-{{ model_name }}">
+                {% if model.admin_url %}
+                  <a href="{{ model.admin_url }}"{% if model.admin_url in request.path|urlencode %} aria-current="page"{% endif %}>{{ model.name }}</a>
+                {% else %}
+                  <span>{{ model.name }}</span>
+                {% endif %}
+              </div>
+              <div class="admin-model-actions">
+                {% if model.add_url %}
+                  <a href="{{ model.add_url }}" class="addlink" aria-describedby="{{ app.app_label }}-{{ model_name }}">{% translate 'Add' %}</a>
+                {% endif %}
+                {% if model.admin_url and show_changelinks %}
+                  {% if model.view_only %}
+                    <a href="{{ model.admin_url }}" class="viewlink" aria-describedby="{{ app.app_label }}-{{ model_name }}">{% translate 'View' %}</a>
+                  {% else %}
+                    <a href="{{ model.admin_url }}" class="changelink" aria-describedby="{{ app.app_label }}-{{ model_name }}">{% translate 'Manage' %}</a>
+                  {% endif %}
+                {% endif %}
+              </div>
+            </div>
+          {% endwith %}
+        {% endfor %}
+      </div>
+    </section>
+  {% endfor %}
+  </div>
+{% else %}
+  <p class="admin-empty-state">{% translate 'You do not have permission to view or edit anything.' %}</p>
+{% endif %}

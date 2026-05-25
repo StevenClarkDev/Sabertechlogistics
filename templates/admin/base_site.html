@@ -6,3 +6,11 @@
 <link rel="stylesheet" href="{% static 'css/admin.css' %}">
 {% endblock %}
 
+{% block nav-global %}
+<nav class="admin-quick-nav" aria-label="Primary admin links">
+    <a href="{% url 'admin:index' %}">Dashboard</a>
+    <a href="/admin/cms/page/">Pages</a>
+    <a href="/admin/seo/pageseo/">SEO</a>
+    <a href="/admin/cms/sitesetting/">Settings</a>
+</nav>
+{% endblock %}
